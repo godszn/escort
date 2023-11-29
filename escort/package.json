@@ -1,0 +1,67 @@
+{
+  "name": "lazer-escort",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/types": "^7.23.4",
+    "@react-oauth/google": "^0.2.6",
+    "@tailwindcss/forms": "0.4.0",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "dotenv": "^16.0.1",
+    "prop-types": "^15.8.1",
+    "react": "17.0.2",
+    "react-datepicker": "^4.5.0",
+    "react-dom": "17.0.2",
+    "react-router-dom": "6.0.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-select": "^5.2.1",
+    "vercel": "^32.5.6"
+  },
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "https://godszn.github.io/escort"
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^17.0.52",
+    "@types/react-dom": "^17.0.18",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.6",
+    "tailwindcss": "3.0.18",
+    "tailwindcss-textshadow": "^2.1.3",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "3.6.0"
+  }
+}
