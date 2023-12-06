@@ -11,7 +11,7 @@ const DivdtindexfootPage: React.FC = () => {
             <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
               <div className="flex md:flex-1 flex-col items-center justify-end pt-9 w-[34%] md:w-full">
                 <div className="flex flex-row items-center justify-start w-full">
-                  <div className="flex flex-col items-center justify-start px-[11px] w-1/2">
+                  <div className="flex flex-col items-start justify-start px-[11px] w-1/2">
                     <div className="flex flex-col items-start justify-start pr-1.5 py-1.5">
                       <Text
                         className="text-gray-800 text-sm"
@@ -53,7 +53,7 @@ const DivdtindexfootPage: React.FC = () => {
                       </Text>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center justify-start pb-[11px] px-[11px] w-1/2">
+                  <div className="flex flex-col items-start justify-start pb-[11px] px-[11px] w-1/2">
                     <div className="flex flex-col items-start justify-start pr-[7px] py-[7px] w-full">
                       <div className="flex flex-col items-center justify-start">
                         <Text

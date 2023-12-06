@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^1.6.2",
     "dotenv": "^16.0.1",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
@@ -19,21 +20,16 @@
     "react-select": "^5.2.1",
     "vercel": "^32.5.6"
   },
-
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "homepage": "https://godszn.github.io/escort"
-  "scripts": {
     "start": "vite",
     "build": "vite build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "serve": "vite preview"
   },
+  "homepage": "https://godszn.github.io/escort",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -8,14 +8,14 @@ const DesktopTwoPage: React.FC = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-montserrat sm:gap-10 md:gap-10 gap-[66px] items-center justify-start mx-auto py-[11px] w-full">
         <Header className="bg-white-A700 border-b border-gray-200_03 border-solid flex flex-col items-center justify-center md:px-5 w-full" />
-        <div className="md:h-[1109px] h-[1444px] mb-[77px] md:px-5 relative w-full">
-          <div className="absolute bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[94%]">
+        <div className="md:h-[1109px] items-end h-[1444px] mb-[77px] md:px-5 relative w-full">
+          <div className="absolute bottom-[0] flex flex-col inset-x-[0] items-end justify-start mx-auto w-[94%]">
             <div className="flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 w-full">
               <div className="flex flex-col items-center justify-start mt-7 pb-[98px] w-[84%] md:w-full">
                 <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
                   <div className="flex md:flex-1 flex-col items-center justify-end pt-9 w-[34%] md:w-full">
                     <div className="flex flex-row items-center justify-start w-full">
-                      <div className="flex flex-col items-center justify-start px-[11px] w-1/2">
+                      <div className="flex flex-col items-start justify-start px-[11px] w-1/2">
                         <div className="flex flex-col items-start justify-start pr-1.5 py-1.5">
                           <Text
                             className="text-gray-800 text-sm"
@@ -57,7 +57,7 @@ const DesktopTwoPage: React.FC = () => {
                           </Text>
                         </div>
                       </div>
-                      <div className="flex flex-col items-center justify-start pb-[11px] px-[11px] w-1/2">
+                      <div className="flex flex-col items-start justify-start pb-[11px] px-[11px] w-1/2">
                         <div className="flex flex-col items-start justify-start pr-[7px] py-[7px] w-full">
                           <div className="flex flex-col items-center justify-start">
                             <Text
@@ -290,9 +290,9 @@ const DesktopTwoPage: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute bottom-[2%] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[95%]">
+                  <div className="absolute can flex flex-col inset-x-[0] items-center justify-start mx-auto w-[95%]">
                     <div className="flex flex-col items-center justify-start w-full">
-                      <div className="flex flex-col gap-8 items-center justify-end pt-8 w-full">
+                      <div className="flex flex-col gap gap-8 items-center justify-end pt-8 w-full">
                         <div className="flex flex-col items-center justify-start w-[86%] md:w-full">
                           <div className="flex flex-col items-center justify-start sm:px-5 px-[27px] w-full">
                             <Text

@@ -1,115 +1,73 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Input, List, Text } from "components";
 
 const DesktopThirtyTwoPage: React.FC = () => {
+
+ const history = useNavigate()
+
+ const switchPage = () => {
+  history('/signup');  
+ }
+
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-asap gap-[22px] justify-start mx-auto py-[27px] w-full">
-        <div className="flex flex-col items-end md:px-10 sm:px-5 px-[165px] w-full">
-          <header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full">
-            <Img
-              className="h-[47px] md:mt-0 my-3"
-              src="images/img_divsection.svg"
-              alt="divsection"
-            />
-            <div className="flex nav-gen md:flex-1 flex-col items-center justify-start md:ml-[0] ml-[107px] md:mt-0 my-1.5 w-[67%] md:w-full">
-              <div className=" nav-container flex md:flex-col flex-row md:gap-5 items-center justify-evenly py-2.5 w-full">
-                <div className="nav-wrap flex md:flex-1 md:flex-col flex-row md:gap-5 items-center justify-start w-[97%] md:w-full">
-                      <div className="flex flex-col items-center justify-start w-full">
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <Text
-                            className="text-black-900 text-sm tracking-[0.30px]"
-                            size="txtAsapRegular14"
-                          >
-                            GGCOIN
+      <div className="bg-white-A700 flex flex-col font-asap gap-[22px] justify-start mx-auto w-full">
+        <div className="flex flex-col items-end md:px-10 sm:px-5 w-full">
+        <header className="flex flex-col items-center justify-center md:px-5 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1436" height="10" viewBox="0 0 1436 10" fill="none">
+              <mask id="path-1-inside-1_60_11978" fill="white">
+                <path d="M0 0H1443V10H0V0Z"/>
+              </mask>
+              <path d="M0 0V-10H-10V0H0ZM1443 0H1453V-10H1443V0ZM1443 10V20H1453V10H1443ZM0 10H-10V20H0V10ZM0 10H1443V-10H0V10ZM1433 0V10H1453V0H1433ZM1443 0H0V20H1443V0ZM10 10V0H-10V10H10Z" fill="#FD00B399" mask="url(#path-1-inside-1_60_11978)"/>
+            </svg>
+              <div className="md:h-[171px] h-[73px] m-0 sm:h-[85px] md:ml-[0] ml-[25px] mr-[57px] mt-4 relative w-[95%] md:w-full">
+                <div className="absolute bg-white-A700 border-b border-gray-200_03 border-solid bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[98%]">
+                  <div className="nav-links flex md:flex-col flex-row md:gap-10 items-center justify-end px-[15px] w-full">
+                    <div className="flex md:flex-1 flex-row gap-3.5 items-center justify-center pr-[18px] w-[29%] md:w-full">
+                      <div className="flex flex-row items-center justify-end w-[75%] md:w-full">
+                      <div className="flex flex-col items-center justify-end p-[11px]">
+                        <a
+                          href="javascript:"
+                          className="mt-0.5 text-blue_gray-900_01 text-center text-lg tracking-[0.50px]"
+                        >
+                          <Text size="txtMontserratMedium18Bluegray90001">
+                            Login
                           </Text>
-                        </div>
+                        </a>
+                      </div>
+                      <div className="flex flex-col items-center justify-start px-2.5 w-[55%]">
+                        <Button
+                          className="cursor-pointer reg-btn min-w-[110px] rounded-[23px] text-center text-lg tracking-[0.50px]"
+                          color="white_A700"
+                          size="xl"
+                          onClick={switchPage}
+                          variant="fill"
+                        >
+                          Register
+                        </Button>
+                      </div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="absolute logo-wrap flex flex-col items-center justify-start left-[0] ml-[4%] py-4 top-[0] w-[22%]">
+                  <div className="flex flex-col items-center justify-start w-full">
+                    <div className="flex flex-col logo-img-wrap items-start justify-start px-4 w-full">
+                      <div className="flex flex-col items-center justify-start w-fit md:w-full">
                         <Img
-                          className="h-4"
-                          src="images/img_checkmark.svg"
-                          alt="checkmark"
+                          className="h-[37px] md:h-auto object-cover w-full"
+                          src="images/img_divvimageimage.png"
+                          alt="divvimageimage"
                         />
                       </div>
-                      <div className="flex flex-col items-center justify-start w-full">
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <Text
-                            className="text-orange-600 text-sm tracking-[0.30px]"
-                            size="txtAsapRegular14Orange600"
-                          >
-                            HOOKUP
-                          </Text>
-                        </div>
-                        <Img
-                          className="h-4"
-                          src="images/img_checkmark.svg"
-                          alt="checkmark_One"
-                        />
-                      </div>
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <div className="flex flex-col items-center justify-start w-full">
-                            <Text
-                              className="text-black-900 text-sm tracking-[0.30px]"
-                              size="txtAsapRegular14"
-                            >
-                              METAVERSE
-                            </Text>
-                          </div>
-                          <Img
-                            className="h-4"
-                            src="images/img_checkmark.svg"
-                            alt="checkmark"
-                          />
-                        </div>
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <div className="flex flex-col items-center justify-start w-full">
-                            <Text
-                              className="text-black-900 text-sm tracking-[0.30px]"
-                              size="txtAsapRegular14"
-                            >
-                              NFT
-                            </Text>
-                          </div>
-                          <Img
-                            className="h-4"
-                            src="images/img_checkmark.svg"
-                            alt="checkmark"
-                          />
-                        </div>
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <div className="flex flex-col items-center justify-start w-full">
-                            <Text
-                              className="text-black-900 text-sm tracking-[0.30px]"
-                              size="txtAsapRegular14"
-                            >
-                              DASHBOARD
-                            </Text>
-                          </div>
-                          <Img
-                            className="h-4"
-                            src="images/img_checkmark.svg"
-                            alt="checkmark"
-                          />
-                        </div>
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <div className="flex flex-col items-center justify-start w-full">
-                            <Text
-                              className="text-black-900 text-sm tracking-[0.30px]"
-                              size="txtAsapRegular14"
-                            >
-                              COMMUNITY
-                            </Text>
-                          </div>
-                          <Img
-                            className="h-4"
-                            src="images/img_checkmark.svg"
-                            alt="checkmark"
-                          />
-                        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </header>
+            </header>
         </div>
         <div className="flex flex-col font-montserrat md:gap-10 gap-[177px] items-center mb-[214px] w-full">
           <div className="md:h-[1695px] sm:h-[3363px] h-[3728px] md:px-5 relative w-full">
@@ -406,6 +364,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                             </div>
                             <div className="flex flex-row gap-[54px] items-center justify-start pr-10 sm:pr-5 pt-10 w-full">
                               <Button
+                                onClick={switchPage}
                                 className="cursor-pointer min-w-[200px] rounded-[27px] text-center text-xl tracking-[0.50px]"
                                 color="orange_600"
                                 size="xl"
@@ -431,7 +390,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                    <div className="input-section">
                                      <div>
                                       <p id = 'purp'>i am a:</p>
-                                      <p>Female</p>
+                                       <input type="number" className="homeInput" placeholder="Female" />
                                      </div>
                                     <div className = 'imputimg'>
                                       <Img
@@ -445,7 +404,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                 <div className="input-section">
                                      <div>
                                       <p id = 'purp'>i am looking for a:</p>
-                                      <p>Male</p>
+                                      <input type="text" className="homeInput" placeholder="Male" />
                                      </div>
                                     <div  className="inputimg">
                                       <Img               
@@ -461,7 +420,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                 <div className="input-section">
                                      <div>
                                       <p id = 'purp'>Between ages:</p>
-                                      <p>20</p>
+                                      <input type="text" className="homeInput" placeholder="20" />
                                      </div>
                                     <div  className="inputimg">
                                       <Img               
@@ -475,7 +434,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                 <div className="input-section">
                                      <div>
                                       <p id = 'purp'>and:</p>
-                                      <p>55</p>
+                                      <input type="text" className="homeInput" placeholder="55" />
                                      </div>
                                     <div  className="inputimg">
                                       <Img               
@@ -489,6 +448,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                             </List>
                             <div className="flex flex-col items-start justify-start mb-[30px] pr-2.5 py-2.5 w-[89%] md:w-full">
                               <Button
+                                onClick={switchPage}
                                 className="capitalize cursor-pointer mb-2.5 min-w-[353px] rounded-[30px] text-center text-xl tracking-[0.50px]"
                                 color="lime_900"
                                 size="2xl"
@@ -506,7 +466,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                         alt="svg"
                       />
                     </div>
-                    <div className="absolute bottom-[16%] flex flex-col items-center justify-start left-[-1]">
+                    <div className="absolute bottom-[15%] flex flex-col items-center justify-start left-[-1]">
                       <div className="flex md:flex-col flex-row gap-[27px] items-start justify-between w-full">
                         <div className="flex md:flex-1 flex-col items-start justify-start w-[51%] md:w-full">
                           <List
@@ -713,7 +673,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                   alt="divh2de44f3029"
                                 />
                                 <div className="flex md:flex-1 flex-col items-center justify-start md:px-10 sm:px-5 px-[50px] w-[74%] md:w-full">
-                                  <div className="flex flex-col items-start justify-start">
+                                  <div onClick={switchPage} className="flex flex-col items-start justify-start">
                                     <Text
                                       className="text-2xl md:text-[22px] text-white-A700 sm:text-xl"
                                       size="txtMontserratMedium24WhiteA700"
@@ -849,6 +809,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                     </Text>
                   </div>
                   <Button
+                    onClick={switchPage}
                     className="cursor-pointer min-w-[200px] rounded-[30px] text-center text-xl"
                     color="orange_600"
                     size="2xl"
@@ -1121,6 +1082,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
                           color="gray_800"
                           size="xl"
                           variant="fill"
+                          onClick={switchPage}
                         >
                           Sign Up
                         </Button>

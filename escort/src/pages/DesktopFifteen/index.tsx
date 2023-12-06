@@ -299,17 +299,17 @@ const DesktopFifteenPage: React.FC = () => {
                         <div className="flex flex-col items-center justify-end pt-12 w-full">
                           <div className="flex flex-col md:gap-10 gap-[74px] items-center justify-start w-full">
                             <div className="flex flex-col gap-[35px] items-start justify-start w-[86%] md:w-full">
-                              <div className="sm:gap-5 grid sm:grid-cols-1 grid-cols-2 justify-center min-h-[auto] w-full">
-                                <div className="h-[61px] px-[11px] relative w-full">
+                              <div className="sm:gap-5 grid sm:grid-cols-1 grid-cols-2 gap-[6%] justify-center min-h-[auto] w-full">
+                                <div className="h-[61px] relative w-full">
                                   <Text
                                     className="mb-[-9.43px] text-[15px] text-pink-50 z-[1]"
                                     size="txtMontserratRegular15"
                                   >
                                     Height
                                   </Text>
-                                  <div className="md:h-[50px] h-[52px] mt-auto mx-auto w-[93%]">
+                                  <div className="md:h-[50px] h-[52px] w-[93%]">
                                     <Img
-                                      className="h-6 ml-auto my-auto w-6"
+                                      className="h-6 ml-auto my-auto w-6 absolute top-[10%] right-[0]"
                                       src="images/img_svg.svg"
                                       alt="svg"
                                     />
@@ -325,16 +325,16 @@ const DesktopFifteenPage: React.FC = () => {
                                     </div>
                                   </div>
                                 </div>
-                                <div className="h-[63px] px-[11px] relative w-full">
+                                <div className="h-[61px] relative w-full">
                                   <Text
                                     className="mb-[-7.98px] text-[15px] text-pink-50 z-[1]"
                                     size="txtMontserratRegular15"
                                   >
                                     Hair color
                                   </Text>
-                                  <div className="md:h-[50px] h-[52px] mt-auto mx-auto w-[93%]">
+                                  <div className="md:h-[50px] h-[52px] w-[93%]">
                                     <Img
-                                      className="h-6 ml-auto my-auto w-6"
+                                      className="h-6 ml-auto my-auto w-6 absolute right-[0]"
                                       src="images/img_svg.svg"
                                       alt="svg"
                                     />
@@ -350,10 +350,10 @@ const DesktopFifteenPage: React.FC = () => {
                                     </div>
                                   </div>
                                 </div>
-                                <div className="md:h-[50px] h-[61px] px-[11px] relative w-full">
-                                  <div className="absolute bottom-[0] md:h-[50px] h-[52px] inset-x-[0] mx-auto w-[93%]">
+                                <div className="md:h-[50px] h-[61px] relative w-full">
+                                  <div className="absolute bottom-[0] md:h-[50px] h-[52px] inset-x-[0] w-[100%]">
                                     <Img
-                                      className="h-6 ml-auto my-auto w-6"
+                                      className="h-6 ml-auto w-6 absolute right-[0]"
                                       src="images/img_svg.svg"
                                       alt="svg"
                                     />
@@ -369,13 +369,13 @@ const DesktopFifteenPage: React.FC = () => {
                                     </div>
                                   </div>
                                   <Text
-                                    className="absolute left-[18%] text-[15px] text-pink-50 top-[0]"
+                                    className="absolute left-[0%] text-[15px] text-pink-50 top-[0]"
                                     size="txtMontserratRegular15"
                                   >
                                     Country
                                   </Text>
                                 </div>
-                                <div className="h-[63px] px-[11px] relative w-full">
+                                <div className="h-[61px] relative w-full">
                                   <Text
                                     className="mb-[-7.98px] text-[15px] text-pink-50 z-[1]"
                                     size="txtMontserratRegular15"
@@ -384,7 +384,7 @@ const DesktopFifteenPage: React.FC = () => {
                                   </Text>
                                   <div className="md:h-[50px] h-[52px] mt-auto mx-auto w-[93%]">
                                     <Img
-                                      className="h-6 ml-auto my-auto w-6"
+                                      className="h-6 ml-auto my-auto w-6 absolute right-[0]"
                                       src="images/img_svg.svg"
                                       alt="svg"
                                     />
@@ -401,10 +401,10 @@ const DesktopFifteenPage: React.FC = () => {
                                   </div>
                                 </div>
                               </div>
-                              <div className="h-[52px] px-[11px] relative w-1/2">
-                                <div className="border-b-2 border-solid border-white-A700_7f h-[52px] m-auto w-[93%]"></div>
+                              <div className="h-[52px] relative w-1/2">
+                                <div className="border-b-2 border-solid border-white-A700_7f h-[52px] w-[93%]"></div>
                                 <Text
-                                  className="absolute h-max inset-y-[0] left-[21%] my-auto text-[15px] text-pink-50"
+                                  className="absolute h-max inset-y-[0] left-[0%] my-auto text-[15px] text-pink-50"
                                   size="txtMontserratRegular15"
                                 >
                                   Birthday
@@ -414,7 +414,7 @@ const DesktopFifteenPage: React.FC = () => {
                             <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between p-[23px] sm:px-5 w-full">
                               <div className="flex flex-col items-center justify-end sm:mt-0 mt-[25px] py-[5px]">
                                 <Text
-                                  className="text-base text-pink-50 text-right"
+                                  className="text-base mr-2 text-pink-50 text-right"
                                   size="txtMontserratRegular16Pink50"
                                 >
                                   2 of 3 steps to complete to access PRO

@@ -30,7 +30,8 @@ width: fit-content !important;
 }
 
 #purp {
-    color: #FCCBF7 !important;
+    color: black !important;
+    font-weight: 600;
 }
 
 .float {
@@ -161,7 +162,8 @@ width: fit-content !important;
 .faq {
     gap: 0;
     margin: 0;
-    align-items: flex-end
+    align-items: flex-end;
+    cursor: pointer;
 }
 
 .fb , .dc {
@@ -201,10 +203,371 @@ width: fit-content !important;
 .name-wrap {
     min-height: 0;
     width: 90%;
-    gap: 10px;
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
 .full {
     width: 100%;
 }
   
+.dec {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.getCon {
+    padding: 0;
+    width: 75%;
+}
+
+.gen-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-base {
+    font-size: 13px;
+}
+
+.pod {
+    padding: .7rem;
+}
+
+.mr7 {
+margin-right: 8rem;
+}
+
+.can {
+    top: 22%;
+}
+
+.gap {
+    gap: 0;
+}
+
+.input-user {
+    background-color: transparent;
+    position: absolute;
+    height: 20px;
+    top: 19px;
+    width: 316px;
+    padding: 0;
+    outline: none;
+    border: transparent;
+    color: wheat;
+    font-size: 15px;
+}
+
+.input-sign {
+    background-color: transparent;
+    position: absolute;
+    height: 20px;
+    top: 17px;
+    width: 316px;
+    padding: 0;
+    outline: none;
+    border: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+/*Dashboard-ThirtyThree css*/
+
+.Dashboard-left-nav {
+width: 40%;
+}
+
+.user-btn {
+   width: 161px;
+   background-image: linear-gradient(180deg, purple 0%, #281952 100%) !important;
+   border: 1px solid rebeccapurple;
+}
+
+.user-img-wrap {
+    margin: 0;
+    align-items: center;
+}
+
+.user-img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 100%;
+}
+
+.logo-wrap {
+    width: fit-content;
+    left: -10px;
+}
+
+.logo-img-wrap {
+    width: fit-content;
+    left: -10px;
+}
+
+.nav-links {
+    gap: 150px;
+}
+
+.thunder {
+display: flex;
+width: 32px;
+height: 32px;
+padding: 7.5px 6.5px 5.5px 6.5px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 16px;
+background: linear-gradient(180deg, purple 0%, #150E28 100%);
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.bg-gradient7 {
+    background-image: linear-gradient(180deg, purple 0%, #281952 100%) !important;
+    outline: purple;
+}
+
+.bg-gradient5 {
+    background-image: linear-gradient(180deg, purple 0%, #281952 100%) !important;
+    outline:2px solid #fff;
+}
+
+.credit-wrap {
+    border: 1.5px solid purple;
+}
+
+.match {
+    color: #cc42bd;
+}
+
+.outline1 {
+    z-index: 10;
+}
+
+.type-wrap {
+    top: 49%;
+}
+
+.search-wrap {
+    padding: 0;
+    margin: 0;
+    width: 76%;
+} 
+
+.type-container {
+    height: 26px;
+}
+
+.type-fit {
+    height: fit-content;
+    padding: 0;
+}
+
+.checkbox {
+    height: 35px;
+}
+
+.rated {
+    justify-content: center;
+    background-color: #cc42bd;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.test {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-test {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #cc42bd;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.check {
+    border: 2px solid #ffffff99;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.recover-input {
+    background-color: transparent;
+    position: absolute;
+    height: 20px;
+    top: 33px;
+    left: 0;
+    width: 316px;
+    padding: 0;
+    outline: none;
+    border: transparent;
+    color: wheat;
+    font-size: 15px;
+    width: 340px;
+}
+
+.recover-logs {
+    background: white;
+    padding: 0.2rem;
+    padding-left: 1.5rem;
+    border-radius: 0.3rem;
+    padding-right: 1.5rem;
+}
+
+.escort-details-wrap {
+    position: absolute;
+    top: 4%;
+    padding: 0;
+}
+
+.escort-details {
+    left: 6%;
+    position: absolute;
+}
+.escort-widget-wrap {
+    height: fit-content;
+    align-items: end;
+    padding-right: 0.2rem;
+}
+
+.escort-img {
+    width: 70%;
+    height: 70%;
+}
+
+.escort-text-wrap {
+    position: absolute;
+    top: -3%;
+    left: 105%;
+    padding: 0;
+}
+
+.escort-preview {
+    left: 155px;
+    top: 12%;
+}
+
+.details-text {
+    width: 50%;
+}
+
+.person {
+    width: 100%;
+}
+
+.call-wrap {
+    width: 36%;
+}
+
+.types {
+    width: 77%;
+}
+
+.p-details {
+    width: 76%;
+}
+
+.gap1 {
+    gap: 50px;
+}
+
+.error-text {
+    color: white;
+    position: absolute;
+    top: 167%;
+    font-size: small;
+}
+
+.login-error {
+    position: absolute;
+    top: 44px;
+    color: white;
+    display: flex;
+    font-size: 15px;
+}
+
+.bg-orange-600 {
+    background-color: #FD00B399 !important;
+}
+
+.text-orange-600 {
+    color: #FD00B399 !important;
+}
+
+.bg-gradient8 {
+    background-image: none;
+    box-shadow: none;
+    border:2px solid #FD00B399 !important;
+    border-radius: 25px;
+}
+
+.bg-gradient9 {
+    background-image: none;
+    box-shadow: none;
+    background-color:#FD00B399;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+
+.bg-gradient11 {
+    background-image: linear-gradient(0deg, #7F1962 0%, #FD00B3 65.28%);
+}
+.bg-lime-900 {
+    background-color: #FD00B399;
+}
+
+.reg-btn {
+    background-color: #FD00B399;
+    color: white;
+    padding: 0.5rem;
+}
+
+.homeInput {
+    width: 386px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.homeInput::placeholder {
+    color: black;
+}
+
+.leftNav {
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.leftNav:hover {
+  border-radius: .5rem;
+  background-color: lightgray;
+  transition: all .5s ease-in-out;
+}
+
+.profile-nav {
+    z-index: 100;
+}
+
+.bg-gradient12 {
+    background-image: linear-gradient(0deg, #7F1962 0%, #FD00B3 65.28%);
+}
+
+.bg-blue-500 {
+    background-color: #FD00B399;
+    border:1px solid #FD00B399;
+}

@@ -1,11 +1,33 @@
 import React from "react";
 
 import { Button, Img, Text } from "components";
+import LoginPage from "pages/Login";
+import Forget from "pages/ForgotPassword";
+import { useNavigate } from "react-router-dom";
 
 const ForgotPasswordOnePage: React.FC = () => {
+
+  const logs = useNavigate();
+  const recover = useNavigate();
+
+  const Login = () => {
+    logs('/Login')
+  }
+
+  const recoverPage = () => {
+    recover('/ForgotPassword')
+  }
+
+  const history = useNavigate()
+
+  const switchPage = () => {
+   history('/signup');
+   
+  }
+
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-montserrat items-center justify-end mx-auto sm:pr-5 pr-[37px] pt-[37px] w-full">
+      <div className="bg-white-A700 flex flex-col font-montserrat items-center justify-end mx-auto sm:pr-5 pr-[37px] pl-[37px] pt-[37px] w-full">
         <div className="h-[1062px] md:h-[911px] max-w-[1402px] mt-3.5 mx-auto md:px-5 relative w-full">
           <div className="bg-gradient10  md:h-[819px] h-[859px] mx-auto pb-[39px] w-[97%] md:w-full">
             <Img
@@ -19,7 +41,7 @@ const ForgotPasswordOnePage: React.FC = () => {
               alt="loginbannermask"
             />
           </div>
-          <div className="absolute h-[1062px] md:h-[897px] inset-[0] justify-center m-auto pb-[165px] w-full">
+          <div className="absolute h-[1062px] md:h-[897px] inset-[0] justify-center m-auto w-full">
             <Img
               className="h-[897px] mx-auto object-cover"
               src="images/img_loginbannerlinessvg.png"
@@ -35,7 +57,7 @@ const ForgotPasswordOnePage: React.FC = () => {
                         src="images/img_pseudo_731x750.png"
                         alt="pseudo"
                       />
-                      <div className="absolute flex flex-col h-max inset-[0] items-start justify-center m-auto pb-[196px] w-[84%]">
+                      <div className="absolute flex flex-col h-max inset-[0] items-start justify-center m-auto w-[84%]">
                         <div className="flex flex-col items-start justify-start w-full">
                           <div className="flex flex-col items-start justify-start w-full">
                             <Text
@@ -53,7 +75,7 @@ const ForgotPasswordOnePage: React.FC = () => {
                           </Text>
                         </div>
                         <div className="flex flex-col items-center justify-start mt-[61px] pb-[35px] w-full">
-                          <div className="border-b-2 border-solid border-white-A700_7f flex flex-col items-center justify-start py-3.5 w-full">
+                          <div className="border-b-2 relative border-solid border-white-A700_7f flex flex-col items-center justify-start py-3.5 w-full">
                             <div className="flex flex-col items-start justify-start mb-[3px] w-full">
                               <Text
                                 className="text-[15px] text-pink-50"
@@ -62,10 +84,12 @@ const ForgotPasswordOnePage: React.FC = () => {
                                 Email
                               </Text>
                             </div>
+                            <input className="recover-input top-[2%]" type="text"  />
                           </div>
                         </div>
                         <div className="flex flex-row sm:gap-10 items-center justify-between w-full">
                           <Button
+                            onClick={recoverPage}
                             className="capitalize cursor-pointer min-w-[150px] rounded-[30px] text-center text-xl tracking-[0.50px]"
                             color="orange_600"
                             size="2xl"
@@ -73,24 +97,15 @@ const ForgotPasswordOnePage: React.FC = () => {
                           >
                             Recover
                           </Button>
-                          <div className="flex flex-col items-center justify-end py-[3px]">
-                            <a
-                              href="javascript:"
-                              className="mt-0.5 text-lg text-pink-50"
-                            >
-                              <Text size="txtMontserratRegular18">
-                                Forgot Password?
-                              </Text>
-                            </a>
-                          </div>
                         </div>
                         <div className="flex flex-col items-start justify-end ml-3 md:ml-[0] mt-[76px] pr-[3px] py-[3px]">
-                          <Text
-                            className="mt-0.5 text-lg text-pink-50"
+                          <p
+                            className="mt-0.5 cursor text-lg text-pink-50"
+                            onClick={Login}
                             size="txtMontserratRegular18"
                           >
                             Proceed to login
-                          </Text>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -106,7 +121,7 @@ const ForgotPasswordOnePage: React.FC = () => {
                       href="javascript:"
                       className="mt-0.5 text-blue_gray-900_01 text-center text-lg tracking-[0.50px]"
                     >
-                      <Text size="txtMontserratMedium18Bluegray90001">
+                      <Text onClick={Login} size="txtMontserratMedium18Bluegray90001">
                         Login
                       </Text>
                     </a>
@@ -116,6 +131,7 @@ const ForgotPasswordOnePage: React.FC = () => {
                       className="cursor-pointer min-w-[110px] rounded-[23px] text-center text-lg tracking-[0.50px]"
                       color="white_A700"
                       size="xl"
+                      onClick={switchPage}
                       variant="fill"
                     >
                       Register

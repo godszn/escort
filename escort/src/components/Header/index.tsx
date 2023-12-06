@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = (props) => {
   return (
     <>
       <header className={props.className}>
-        <div className="flex flex-col items-center justify-center px-[15px] w-full">
+        <div className="flex flex-col items-end justify-center px-[15px] w-full">
           <div className="flex flex-col items-center justify-center pl-2 py-2 w-[14%] md:w-full">
             <div className="bg-blue-500 border border-blue-500 border-solid flex flex-row items-center justify-center rounded-[20px] w-[99%] md:w-full">
               <div className="flex flex-col items-start justify-start ml-3 w-[38px]">

@@ -5,7 +5,7 @@ import { Button, Img, Input, Text } from "components";
 const ChangePasswordPage: React.FC = () => {
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-montserrat items-center justify-end mx-auto sm:pr-5 pr-[37px] pt-[37px] w-full">
+      <div className="bg-white-A700 flex flex-col font-montserrat items-center justify-end mx-auto sm:pr-5 pr-[37px] pl-[37px] pt-[37px] w-full">
         <div className="h-[1062px] md:h-[911px] max-w-[1402px] mt-3.5 mx-auto md:px-5 relative w-full">
           <div className="bg-gradient10  md:h-[819px] h-[859px] mx-auto pb-[39px] w-[97%] md:w-full">
             <Img
