@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { Button, CheckBox, Img, Input, Line, List, Text } from "components";
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,31 @@ const DesktopThirtyThreePage: React.FC = () => {
   
   const AccountPage = () => {
     account('/DesktopTwentyNine')
+  }
+
+  const Advert = () => {
+    account('/A')
+  }
+
+  const messages = () => {
+    account('/Meesages')
+  }
+
+  const member = () => {
+    account('/BecomeamemberOne')
+  }
+
+  const [isVisible , setIsVisible] = useState(false);
+  const [isrotate , setRotate] = useState(false)
+
+  const toggle = () => {
+    setIsVisible(!isVisible)
+    setRotate(!isrotate)
+  }
+
+  const rotate = {
+    transform: isrotate ? 'rotate(180deg)' : 'rotate(0deg)',
+    transition: 'all .5s ease-in-out'
   }
 
   return (
@@ -194,7 +219,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                         </div>
                       </div>
                       <Button
-                        className="cursor-pointer font-medium mb-[3px] min-w-[227px] mt-[15px] rounded-[17px] text-center text-sm"
+                        className="cursor-pointer font-medium mb-[3rem] min-w-[227px] mt-[15px] rounded-[17px] text-center text-sm"
                         color="pink_50"
                         size="md"
                         variant="outline"
@@ -204,7 +229,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute bottom-[3%] flex flex-col font-roboto gap-4 inset-x-[0] items-center justify-start mx-auto py-2 w-[96%]">
+                <div className="absolute top-[23%] flex flex-col font-roboto gap-4 inset-x-[0] items-center justify-start mx-auto py-2 w-[96%]">
                   <div className="leftNav flex flex-row items-center justify-start px-4 w-full">
                     <Img
                       className="h-14 w-14"
@@ -227,7 +252,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                   <div className="flex flex-col items-center justify-start w-full">
                     <div className=" mt-2 h-14 relative w-full">
                       <Img
-                        className="absolute h-14 inset-y-[0] top-[23%] left-[6%] my-auto w-14"
+                        className="absolute h-14 inset-y-[0] left-[6%] my-auto w-14"
                         src="images/img_divvlistitemiconmargin.svg"
                         alt="divvlistitemico"
                       />
@@ -244,20 +269,22 @@ const DesktopThirtyThreePage: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                        <Img
-                          className="h-4 cursor"
-                          src="images/img_arrowdown_gray_600_01.svg"
-                          alt="arrowdown_One"
-                        />
+                        <section onClick={toggle} style={rotate}>
+                            <Img
+                              className="h-4 cursor"
+                              src="images/img_arrowdown_gray_600_01.svg"
+                              alt="arrowdown_One"
+                            />
+                        </section>
                       </div>
                       <Line className="absolute bg-black-900_1e border-gray-800_03 border-solid border-t h-px inset-x-[0] mx-auto top-[0] w-full" />
                     </div>
-                    <div className="flex flex-col items-center justify-start w-full">
+                    {isVisible && <div className="flex flex-col items-center justify-start w-full">
                       <List
                         className="flex flex-col gap-px items-center w-full"
                         orientation="vertical"
                       >
-                        <div className=" leftNav flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
+                        <div onClick = {messages} className="leftNav flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
                           <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
                             <div className="flex flex-col items-start justify-start w-full">
                               <div className="flex flex-col items-center justify-start">
@@ -265,7 +292,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                                   className="text-base text-gray-600_01"
                                   size="txtRobotoRegular16"
                                 >
-                                  Overview
+                                  Messages
                                 </Text>
                               </div>
                             </div>
@@ -278,6 +305,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                                 <Text
                                   className="text-base text-gray-600_01"
                                   size="txtRobotoRegular16"
+                                  onClick={Advert}
                                 >
                                   Advert free
                                 </Text>
@@ -301,7 +329,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                         </div>
                         <Line className="none bg-black-900_1e border-b border-gray-800_03 border-solid h-px w-full" />
                       </div>
-                    </div>
+                    </div> }
                   </div>
                   <List
                     className="flex flex-col gap-4 items-center mb-4 w-full"
@@ -326,7 +354,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
+                    <div onClick={member} className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                       <Img
                         className="h-14 w-14"
                         src="images/img_divvlistitemiconmargin_gray_600_01.svg"

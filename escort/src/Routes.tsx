@@ -27,6 +27,7 @@ import DesktopTwo from "pages/DesktopTwo";
 import Signup from "pages/Signup";
 import Login from "pages/Login";
 import DesktopThirtyTwo from "pages/DesktopThirtyTwo";
+import  Service from 'pages/Services'
 
 const ProjectRoutes = () => {
   return (
@@ -59,6 +60,7 @@ const ProjectRoutes = () => {
           <Route path="/desktoptwentysix" element={<DesktopTwentySix />} />
           <Route path="/desktopthirtyfour" element={<DesktopThirtyFour />} />
           <Route path="/desktopthirtyfive" element={<DesktopThirtyFive />} />
+          <Route path="/service" element={<Service/>} />
         </Routes>
       </Router>
   );

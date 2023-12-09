@@ -390,7 +390,13 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                    <div className="input-section">
                                      <div>
                                       <p id = 'purp'>i am a:</p>
-                                       <input type="number" className="homeInput" placeholder="Female" />
+                                       <select type="number" className="homeInput" placeholder="Female">
+                                        <option value="female">Female</option>
+                                        <option value="Male">Male</option>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 5" fill="none">
+                                          <path d="M0.339844 0L5.33984 5L10.3398 0H0.339844Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                        </select>
                                      </div>
                                     <div className = 'imputimg'>
                                       <Img
@@ -404,7 +410,13 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                 <div className="input-section">
                                      <div>
                                       <p id = 'purp'>i am looking for a:</p>
-                                      <input type="text" className="homeInput" placeholder="Male" />
+                                      <select type="number" className="homeInput">
+                                        <option value="female">Male</option>
+                                        <option value="Male">Female</option>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 5" fill="none">
+                                          <path d="M0.339844 0L5.33984 5L10.3398 0H0.339844Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                        </select>
                                      </div>
                                     <div  className="inputimg">
                                       <Img               
@@ -420,7 +432,14 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                 <div className="input-section">
                                      <div>
                                       <p id = 'purp'>Between ages:</p>
-                                      <input type="text" className="homeInput" placeholder="20" />
+                                      <select type="number" className="homeInput" placeholder="Female">
+                                        <option value="female">20-30</option>
+                                        <option value="Male">30-40</option>
+                                        <option value="Male">40-50</option>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 5" fill="none">
+                                          <path d="M0.339844 0L5.33984 5L10.3398 0H0.339844Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                        </select>
                                      </div>
                                     <div  className="inputimg">
                                       <Img               
@@ -434,7 +453,13 @@ const DesktopThirtyTwoPage: React.FC = () => {
                                 <div className="input-section">
                                      <div>
                                       <p id = 'purp'>and:</p>
-                                      <input type="text" className="homeInput" placeholder="55" />
+                                      <select type="number" className="homeInput">
+                                      <option value="Male">50-60</option>
+                                      <option value="Male">60-70</option>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 5" fill="none">
+                                          <path d="M0.339844 0L5.33984 5L10.3398 0H0.339844Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                        </select>
                                      </div>
                                     <div  className="inputimg">
                                       <Img               

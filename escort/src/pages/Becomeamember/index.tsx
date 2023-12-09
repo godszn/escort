@@ -13,7 +13,7 @@ const BecomeamemberPage: React.FC = () => {
           alt="pseudo"
         />
         <div className="md:h-[171px] h-[73px] sm:h-[85px] max-w-[1354px] mt-4 mx-auto md:px-5 relative w-full">
-          <Header1 className="absolute bg-white-A700 border-b border-gray-200_03 border-solid bottom-[0] flex flex-col inset-x-[0] items-center justify-center mx-auto w-full" />
+          <Header1 className="absolute bg-white-A700 border-b border-gray-200_03 border-solid bottom-[0] flex flex-col inset-x-[0] items-center justify-center mx-auto" />
           <div className="absolute flex flex-col items-center justify-start left-[0] py-4 top-[0] w-[22%]">
             <div className="flex flex-col items-center justify-start w-full">
               <div className="flex flex-col items-start justify-start px-4 w-full">
@@ -246,13 +246,13 @@ const BecomeamemberPage: React.FC = () => {
             </div>
           </div>
           <div
-            className="absolute bg-cover bg-no-repeat flex inset-x-[0] mx-auto pl-3 py-3 top-[0] w-full"
+            className="absolute bg-cover bg-no-repeat flex inset-x-[0] mx-auto pl-3 py-3 top-[0]"
             style={{
               backgroundImage:
                 "url('images/img_loginbannermasksvg_black_900.png')",
             }}
           >
-            <div className="md:h-[917px] h-[952px] ml-[undefinedpx] my-auto pb-1.5 px-1.5 w-[21%] z-[1]">
+            {/* <div className="md:h-[917px] h-[952px] ml-[undefinedpx] my-auto pb-1.5 px-1.5 w-[21%] z-[1]">
               <div className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
                 <div className="flex flex-col items-start justify-start mb-[674px] w-full">
                   <div className="flex flex-col items-start justify-start w-[34%] md:w-full">
@@ -501,7 +501,7 @@ const BecomeamemberPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <Img
               className="h-[358px] ml-[-11.48px] mr-3.5 mt-10 z-[1]"
               src="images/img_divlwadblockh90.svg"
