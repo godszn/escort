@@ -12,7 +12,7 @@ const APage: React.FC = () => {
     account('/DesktopTwentyNine')
   }
 
-  const meessage = () => {
+  const messages = () => {
     account('/Meesages')
   }
   
@@ -21,11 +21,15 @@ const APage: React.FC = () => {
   }
 
   const member = () => {
-    account('/BecomeamemberOne')
+    account('/Becomeamember')
   }
 
-  const [isVisible , setIsVisible] = useState(false);
-  const [isrotate , setRotate] = useState(false)
+  const settings = () => {
+    account('/DesktopFourtyNine')
+  }
+
+  const [isVisible , setIsVisible] = useState(true);
+  const [isrotate , setRotate] = useState(true)
 
   const toggle = () => {
     setIsVisible(!isVisible)
@@ -128,7 +132,7 @@ const APage: React.FC = () => {
                                     <input type="radio" name="radio"/>
                                     <span className="checkmark"></span>
                                   </label>
-                                  <div className="flex flex-col items-center justify-start w-[90%] md:w-full">
+                                  <div className="flex flex-col items-center justify-start w-[1000%] pr-[6remm] md:w-full">
                                     <div className="border h-[80px] border-gray-600_03 border-solid flex md:flex-col flex-row md:gap-5 items-start justify-start p-[9px] rounded-[3px] w-full">
                                       <div className="flex md:flex-1 flex-col items-start justify-start ml-6 md:ml-[0] w-[61%] md:w-full">
                                         <div className="flex flex-col items-center justify-start py-2">
@@ -164,7 +168,7 @@ const APage: React.FC = () => {
                                     <input type="radio" name="radio"/>
                                     <span className="checkmark"></span>
                                   </label>
-                                  <div className="flex md:flex-1 flex-col items-start pr-[4.5rem] justify-start w-[98%] md:w-full">
+                                  <div className="flex md:flex-1 flex-col items-start pr-[4.5rem] justify-start w-[1000%] md:w-full">
                                     <div className="border h-[80px] border-gray-600_03 border-solid flex md:flex-col flex-row md:gap-5 items-start justify-start p-2 rounded-[3px] w-[97%] md:w-full">
                                       <div className="flex flex-col items-start justify-start ml-6 md:ml-[0] w-[61%] md:w-full">
                                         <div className="flex flex-col items-center justify-start py-2">
@@ -200,7 +204,7 @@ const APage: React.FC = () => {
                                     <input type="radio" name="radio"/>
                                     <span className="checkmark"></span>
                                   </label>
-                                <div className="flex md:flex-1 flex-col items-center justify-start w-[97%] pr-[3.5rem] md:w-full">
+                                <div className="flex md:flex-1 flex-col items-center justify-start w-[1000%] pr-[3.5rem] md:w-full">
                                   <div className="border h-[80px] border-gray-600_03 border-solid flex md:flex-col flex-row md:gap-5 items-start justify-start p-[9px] rounded-[3px] w-full">
                                     <div className="flex md:flex-1 flex-col items-start justify-start ml-6 md:ml-[0] w-[61%] md:w-full">
                                       <div className="flex flex-col items-center justify-end py-[7px]">
@@ -384,7 +388,7 @@ const APage: React.FC = () => {
                   </div>
                   <div className="flex md:flex-col flex-row md:gap-12 items-start justify-between w-full">
                   <div className="md:h-[917px] h-[952px] relative w-[22%] md:w-full">
-                <div className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
+                <div style={{boxShadow: '1px 2px 11px lightgrey'}}  className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
                   <div className="flex flex-col items-start justify-start mb-[674px] w-full">
                     <div className="flex flex-col items-start justify-start w-[34%] md:w-full">
                       <div
@@ -426,7 +430,7 @@ const APage: React.FC = () => {
                         </div>
                       </div>
                       <Button
-                        className="cursor-pointer mb-[2%] font-medium mb-[1.5rem] min-w-[227px] mt-[15px] rounded-[17px] text-center text-sm"
+                        className="cursor-pointer font-medium mb-[3rem] min-w-[227px] mt-[15px] rounded-[17px] text-center text-sm"
                         color="pink_50"
                         size="md"
                         variant="outline"
@@ -436,8 +440,8 @@ const APage: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute top-[22%] flex flex-col font-roboto gap-4 inset-x-[0] items-center justify-start mx-auto py-2 w-[96%]">
-                  <div className="leftNav flex flex-row items-center justify-start px-4 w-[90%]">
+                <div className="absolute top-[23%] flex flex-col font-roboto gap-4 inset-x-[0] items-center justify-start mx-auto py-2 w-[92%]">
+                  <div className="leftNav flex flex-row items-center justify-start px-4 w-full">
                     <Img
                       className="h-14 w-14"
                       src="images/img_home.svg"
@@ -456,7 +460,7 @@ const APage: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center justify-start w-[95%]">
+                  <div className="flex flex-col items-center justify-start w-full">
                     <div className=" mt-2 h-14 relative w-full">
                       <Img
                         className="absolute h-14 inset-y-[0] left-[6%] my-auto w-14"
@@ -476,22 +480,22 @@ const APage: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                         <section onClick={toggle} style={rotate}>
-                         <Img
-                          className="h-4 cursor"
-                          src="images/img_arrowdown_gray_600_01.svg"
-                          alt="arrowdown_One"
-                        />
-                         </section>
+                        <section onClick={toggle} style={rotate}>
+                            <Img
+                              className="h-4 cursor"
+                              src="images/img_arrowdown_gray_600_01.svg"
+                              alt="arrowdown_One"
+                            />
+                        </section>
                       </div>
                       <Line className="absolute bg-black-900_1e border-gray-800_03 border-solid border-t h-px inset-x-[0] mx-auto top-[0] w-full" />
                     </div>
-                  {isVisible && <div className="flex flex-col items-center justify-start w-full">
+                    {isVisible && <div className="flex flex-col items-center justify-start w-full">
                       <List
                         className="flex flex-col gap-px items-center w-full"
                         orientation="vertical"
                       >
-                        <div onClick={meessage} className=" leftNav flex flex-1 flex-col items-end justify-start my-0 px-4 w-[95%]">
+                        <div onClick = {messages} className="leftNav flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
                           <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
                             <div className="flex flex-col items-start justify-start w-full">
                               <div className="flex flex-col items-center justify-start">
@@ -505,8 +509,8 @@ const APage: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="leftNav flex flex-1 flex-col items-end justify-start active my-0 px-4 w-[95%]">
-                          <div className="flex flex-col items-center justify-start py-4 w-[69%] md:w-full">
+                        <div className="leftNav flex flex-1 flex-col items-end justify-start active my-0 px-4 w-full">
+                          <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
                             <div className="flex flex-col items-start justify-start w-full">
                               <div className="flex flex-col items-center justify-start">
                                 <Text
@@ -520,7 +524,7 @@ const APage: React.FC = () => {
                           </div>
                         </div>
                       </List>
-                      <div onClick={ratedPage} className="rated mt-2 flex flex-col justify-start w-full">
+                      <div className="rated mt-2 flex flex-col justify-start w-full">
                         <div className="flex flex-col items-center justify-start md:ml-[0] py-4 w-[100%] md:w-full">
                           <div className="flex flex-col items-center justify-start w-full">
                             <div className="flex flex-col items-center justify-start">
@@ -535,13 +539,13 @@ const APage: React.FC = () => {
                         </div>
                         <Line className="none bg-black-900_1e border-b border-gray-800_03 border-solid h-px w-full" />
                       </div>
-                    </div>}
+                    </div> }
                   </div>
                   <List
                     className="flex flex-col gap-4 items-center mb-4 w-full"
                     orientation="vertical"
                   >
-                    <div className="leftNav flex flex-1 flex-row items-center justify-start w-[90%]">
+                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                       <Img
                         className="h-14 w-14"
                         src="images/img_lock_gray_600_01.svg"
@@ -560,13 +564,13 @@ const APage: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="leftNav flex flex-1 flex-row items-center justify-start w-[90%]">
+                    <div onClick={member} className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                       <Img
                         className="h-14 w-14"
                         src="images/img_divvlistitemiconmargin_gray_600_01.svg"
                         alt="divvlistitemico"
                       />
-                      <div onClick={member} className="flex flex-col items-center justify-start py-4 w-[79%]">
+                      <div className="flex flex-col items-center justify-start py-4 w-[79%]">
                         <div className="flex flex-col items-start justify-start w-full">
                           <div className="flex flex-col items-center justify-start">
                             <Text
@@ -579,7 +583,7 @@ const APage: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="leftNav flex flex-1 flex-row items-center justify-start w-[90%]">
+                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                       <Img
                         className="h-14 w-14"
                         src="images/img_divvlistitemiconmargin_gray_600_01_56x56.svg"
@@ -598,7 +602,7 @@ const APage: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="leftNav flex flex-1 flex-row items-center justify-start w-[90%]">
+                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                       <Img
                         className="h-14 w-[55px]"
                         src="images/img_divvlistitemiconmargin_gray_600_01_56x55.svg"
@@ -617,7 +621,7 @@ const APage: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="leftNav flex flex-1 flex-col font-montserrat items-center justify-end w-[90%]">
+                    <div className="leftNav flex flex-1 flex-col font-montserrat items-center justify-end p-[5px] w-full">
                       <div className="flex flex-row items-center justify-start pr-[11px] py-[11px] w-[82%] md:w-full">
                         <Img
                           className="h-5"
@@ -706,6 +710,14 @@ const APage: React.FC = () => {
                           size="txtMontserratRegular14"
                         >
                           Contact
+                        </Text>
+                      </div>
+                      <div onClick={settings} className="cursor flex flex-col items-start justify-end pr-1.5 py-1.5">
+                        <Text
+                          className="text-gray-800 text-sm"
+                          size="txtMontserratRegular14"
+                        >
+                          Settings
                         </Text>
                       </div>
                     </div>

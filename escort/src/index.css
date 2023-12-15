@@ -1,5 +1,13 @@
+body {
+    font-family: 'poppins' , sans-serif !important;
+}
+
 .nav-gen {
 width: fit-content !important;
+}
+
+.dhiwise-code {
+    overflow: hidden !important;
 }
 
 .nav-container {
@@ -282,8 +290,8 @@ width: 40%;
 
 .user-btn {
    width: 161px;
-   background-image: linear-gradient(180deg, purple 0%, #281952 100%) !important;
-   border: 1px solid rebeccapurple;
+   background-color:#FD00B399 ;
+   border: 1px solid #FD00B399;
 }
 
 .user-img-wrap {
@@ -320,22 +328,23 @@ justify-content: center;
 align-items: center;
 flex-shrink: 0;
 border-radius: 16px;
-background: linear-gradient(180deg, purple 0%, #150E28 100%);
+background-color:#FD00B399;
 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
 .bg-gradient7 {
-    background-image: linear-gradient(180deg, purple 0%, #281952 100%) !important;
-    outline: purple;
+    background-color:#FD00B399;
+    outline:#FD00B399 ;
+    background-image: none;
 }
 
 .bg-gradient5 {
-    background-image: linear-gradient(180deg, purple 0%, #281952 100%) !important;
+    background-color:#FD00B399;
     outline:2px solid #fff;
 }
 
 .credit-wrap {
-    border: 1.5px solid purple;
+    border: 1.5px solid#FD00B399;
 }
 
 .match {
@@ -666,4 +675,168 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
     height: 8px;
     border-radius: 50%;
     background: white;
+}
+
+.inputsix {
+    outline: none;
+    border: transparent;
+}
+
+.page-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-inputs p {
+    font-size: smaller;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.page-inputs input {
+    margin-top: .5rem;
+    border-radius: .5rem;
+}
+
+.escort-list li {
+    margin-bottom: .5rem;
+}
+
+.escort-cruel {
+    box-shadow: 2px 3px 11px lightgray;
+}
+
+.confirm {
+    box-shadow: 2px 3px 11px lightgray;
+}
+
+.dashboard-lists li{
+ display: flex;
+ align-items: center;
+ padding: 1rem;
+ margin-bottom: .5rem;
+}
+
+.dashboard-lists li img , svg{
+    margin-right: .5rem;
+}
+
+.dahs h1{
+ font-size: 20px;
+ line-height: 1;
+ font-weight: 500;
+ color:#FD2C79 ;
+}
+
+.dahs p {
+font-size: smaller;
+}
+
+.auth-list li {
+    margin-left: 1rem;
+    color:#444444CC ;
+}
+
+.english {
+    padding: 0.4rem;
+    border: 1px solid lightgray;
+    border-radius: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #444444CC;
+}
+
+.dahs-btn {
+    background-color: deeppink;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+.log {
+    border: 1px solid orange;
+    padding: 0.4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 0.4rem;
+    color: orange;
+}
+
+.logot {
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 0.7rem;
+}
+
+.escort-submit-form {
+    background-color: white;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: 1px 2px 11px lightgrey;
+}
+
+.escort-submit-form input {
+    border-radius: .3rem;
+    border: 1px solid #DDDDDD;
+}
+.grid-form input{
+ width: 380px;
+}
+
+.escort-add-btn {
+    background-color: #F6F6F6;
+    width: fit-content;
+    border: 2px solid #DDDDDD;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.dashboard-lists {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.dashboard-lists li:hover {
+background-color: lightgray;
+transition: all .5s ease-in-out;
+}
+
+.active1 {
+    background-color: deeppink;
+    border-radius: .3rem;
+    color: white;
+}
+
+.active1:hover {
+    background-color: deeppink !important;
+}
+
+.becomeEscort {
+    font-size: 14px;
+    background-color: magenta;
+    padding: 0.5rem;
+    line-height: 1;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+.details-text h1{
+font-size: 25px;
+font-weight: 600;
+color: deeppink;
+}
+
+.details-text h2 {
+    color: deeppink;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.details-text h3 {
+    color: deeppink;
+    font-size: 20px;
+    font-weight: 600;
 }

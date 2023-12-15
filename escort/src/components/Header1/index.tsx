@@ -17,7 +17,7 @@ const Header1: React.FC<Header1Props> = (props) => {
               <mask id="path-1-inside-1_60_11978" fill="white">
                 <path d="M0 0H1443V10H0V0Z"/>
               </mask>
-              <path d="M0 0V-10H-10V0H0ZM1443 0H1453V-10H1443V0ZM1443 10V20H1453V10H1443ZM0 10H-10V20H0V10ZM0 10H1443V-10H0V10ZM1433 0V10H1453V0H1433ZM1443 0H0V20H1443V0ZM10 10V0H-10V10H10Z" fill="purple" mask="url(#path-1-inside-1_60_11978)"/>
+              <path d="M0 0V-10H-10V0H0ZM1443 0H1453V-10H1443V0ZM1443 10V20H1453V10H1443ZM0 10H-10V20H0V10ZM0 10H1443V-10H0V10ZM1433 0V10H1453V0H1433ZM1443 0H0V20H1443V0ZM10 10V0H-10V10H10Z" fill="#FD00B399" mask="url(#path-1-inside-1_60_11978)"/>
             </svg>
               <div className="md:h-[171px] h-[73px] m-0 sm:h-[85px] md:ml-[0]  mt-4 relative w-[102%] md:w-full">
                 <div className="absolute bg-white-A700 border-b border-gray-200_03 border-solid bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[98%]">
@@ -62,7 +62,7 @@ const Header1: React.FC<Header1Props> = (props) => {
                       </div>
                     </div>
                     <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-5 items-center Dashboard-left-nav justify-center w-[38%] md:w-full">
-                      <div className="flex flex-col items-center justify-end p-3 w-[32%] sm:w-full">
+                      <div className="flex flex-col items-center justify-end cursor p-3 w-[32%] sm:w-full">
                         <div className=" credit-wrap border border-gray-200_03 border-solid flex flex-row items-center justify-center p-[5px] rounded-[15px] w-[97%] md:w-full">
                           <Text
                             className="ml-2.5 text-base text-gray-800_02"
@@ -82,17 +82,17 @@ const Header1: React.FC<Header1Props> = (props) => {
                         </div>
                       </div>
                       <Img
-                        className="h-[57px]"
+                        className="h-[57px] cursor"
                         src="images/img_user.svg"
                         alt="user"
                       />
                       <Img
-                        className="h-[57px]"
+                        className="h-[57px] cursor"
                         src="images/img_item.svg"
                         alt="item"
                       />
                       <div className="flex flex-row items-center justify-evenly w-[47%] sm:w-full">
-                        <section className="thunder">
+                        <section className="thunder cursor">
                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
                             <g clip-path="url(#clip0_60_11959)">
                               <path d="M14.3854 6.76984C14.2558 6.55947 14.027 6.43108 13.7802 6.43108H10.5122L12.2785 0.926682C12.3476 0.710734 12.3099 0.474323 12.1761 0.291187C12.0428 0.108551 11.8294 0 11.6029 0H8.35465C8.04615 0 7.77285 0.199253 7.67907 0.492902L5.04466 8.70403C4.97554 8.91993 5.01323 9.15623 5.14709 9.33948C5.28034 9.52212 5.49379 9.63067 5.7202 9.63067H6.29211H8.91483L8.06835 18.6716C8.05481 18.8153 8.14543 18.948 8.2843 18.988C8.4225 19.0282 8.56998 18.9646 8.63534 18.8357L14.4131 7.46277C14.5248 7.2424 14.5143 6.98029 14.3854 6.76984Z" fill="white"/>
@@ -105,8 +105,8 @@ const Header1: React.FC<Header1Props> = (props) => {
                             </svg>
                         </section>
                         <div className="flex flex-col items-end justify-start pl-2 py-2 w-4/5">
-                          <div className="border border-orange-600 border-solid flex flex-row items-center justify-start user-btn rounded-[20px] w-[99%] md:w-full">
-                            <div className=" user-img-wrap flex flex-col items-start justify-start ml-3 w-[38px]">
+                          <div className="border border-orange-600 border-solid flex flex-row items-center justify-start user-btn rounded-[20px] cursor w-[99%] md:w-full">
+                            <div className=" user-img-wrap cursor flex flex-col items-start justify-start ml-3 w-[38px]">
                               <Img
                                 className=" user-img h-[39px] md:h-auto object-cover rounded-[20px] w-[74%]"
                                 src="images/img_bv7mozwnhchqrqp.png"
@@ -132,7 +132,7 @@ const Header1: React.FC<Header1Props> = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute logo-wrap flex flex-col items-center justify-start left-[0] py-4 top-[0] w-[22%]">
+                <div className="absolute ml-4 logo-wrap flex flex-col items-center justify-start left-[0] py-4 top-[0] w-[22%]">
                   <div className="flex flex-col items-center justify-start w-full">
                     <div className="flex flex-col logo-img-wrap items-start justify-start px-4 w-full">
                       <div className="flex flex-col items-center justify-start w-fit md:w-full">

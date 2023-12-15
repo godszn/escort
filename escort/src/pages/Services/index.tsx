@@ -21,10 +21,10 @@ const ServicesPage: React.FC = () => {
     const messages = () => {
         account('/Meesages')
     }
-
     const member = () => {
-        account('/BecomeamemberOne')
-    }
+        account('/DesktopTwentySix')
+      }
+    
 
     const [isVisible, setIsVisible] = useState(false);
     const [isrotate, setRotate] = useState(false)
@@ -1128,7 +1128,7 @@ const ServicesPage: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
+                                <div  onClick={member} className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                                     <Img
                                         className="h-14 w-14"
                                         src="images/img_divvlistitemiconmargin_gray_600_01.svg"
@@ -1338,13 +1338,14 @@ const ServicesPage: React.FC = () => {
                                             Follow us!
                                         </Text>
                                         <div className="flex flex-row items-center justify-between w-full">
+                                            {/* <a href=""></a> */}
                                             <Button
                                                 className="flex h-[42px] items-center justify-center w-[42px]"
                                                 shape="circle"
                                                 color="gray_400_4f"
                                                 size="xl"
                                                 variant="fill"
-                                            >
+                                            >   
                                                 <Img src="images/img_facebook.svg" alt="facebook" />
                                             </Button>
                                             <Button

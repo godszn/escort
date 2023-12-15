@@ -45,7 +45,7 @@ const DesktopThirtyThreePage: React.FC = () => {
               <mask id="path-1-inside-1_60_11978" fill="white">
                 <path d="M0 0H1443V10H0V0Z"/>
               </mask>
-              <path d="M0 0V-10H-10V0H0ZM1443 0H1453V-10H1443V0ZM1443 10V20H1453V10H1443ZM0 10H-10V20H0V10ZM0 10H1443V-10H0V10ZM1433 0V10H1453V0H1433ZM1443 0H0V20H1443V0ZM10 10V0H-10V10H10Z" fill="purple" mask="url(#path-1-inside-1_60_11978)"/>
+              <path d="M0 0V-10H-10V0H0ZM1443 0H1453V-10H1443V0ZM1443 10V20H1453V10H1443ZM0 10H-10V20H0V10ZM0 10H1443V-10H0V10ZM1433 0V10H1453V0H1433ZM1443 0H0V20H1443V0ZM10 10V0H-10V10H10Z" fill="#FD00B399" mask="url(#path-1-inside-1_60_11978)"/>
             </svg>
               <div className="md:h-[171px] h-[73px] m-0 sm:h-[85px] md:ml-[0] ml-[25px] mr-[57px] mt-4 relative w-[95%] md:w-full">
                 <div className="absolute bg-white-A700 border-b border-gray-200_03 border-solid bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[98%]">
@@ -177,7 +177,7 @@ const DesktopThirtyThreePage: React.FC = () => {
             </header>
             <div className="flex md:flex-col flex-row gap-2.5 items-start justify-between max-w-[1386px] mx-auto md:px-5 w-full">
               <div className="md:h-[917px] h-[952px] relative w-[22%] md:w-full">
-                <div className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
+                <div style={{boxShadow: '1px 2px 11px lightgrey'}}  className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
                   <div className="flex flex-col items-start justify-start mb-[674px] w-full">
                     <div className="flex flex-col items-start justify-start w-[34%] md:w-full">
                       <div
@@ -314,7 +314,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                           </div>
                         </div>
                       </List>
-                      <div className="rated mt-2 bg-orange-600 flex flex-col justify-start w-full">
+                      <div className="rated active mt-2 flex flex-col justify-start w-full">
                         <div className="flex flex-col items-center justify-start md:ml-[0] py-4 w-[100%] md:w-full">
                           <div className="flex flex-col items-center justify-start w-full">
                             <div className="flex flex-col items-center justify-start">
@@ -360,7 +360,7 @@ const DesktopThirtyThreePage: React.FC = () => {
                         src="images/img_divvlistitemiconmargin_gray_600_01.svg"
                         alt="divvlistitemico"
                       />
-                      <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                      <div className="flex flex-col  items-center justify-start py-4 w-[79%]">
                         <div className="flex flex-col items-start justify-start w-full">
                           <div className="flex flex-col items-center justify-start">
                             <Text

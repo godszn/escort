@@ -23,7 +23,7 @@ const DesktopTwentyNinePage: React.FC = () => {
   }
 
   const member = () => {
-    account('/BecomeamemberOne')
+    account('/Becomeamember')
   }
 
   const [isVisible , setIsVisible] = useState(false);
@@ -491,12 +491,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                     alt="eye_One"
                                   />
                                   <div className="flex flex-col items-center justify-start w-auto">
-                                    <Text
-                                      className="sm:text-[17px] md:text-[19px] text-[21px] text-amber-A200_01 text-center tracking-[0.50px] uppercase w-auto"
-                                      size="txtAsapMedium21"
-                                    >
-                                      Overview
-                                    </Text>
+                                   <h1>
+                                    Overview
+                                   </h1>
                                   </div>
                                 </div>
                                 <div className="flex flex-row h-12 md:h-auto items-center justify-center md:px-10 px-12 sm:px-5 py-2.5 w-auto">
@@ -506,12 +503,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                     alt="imgmargin"
                                   />
                                   <div className="flex flex-col items-center justify-start pl-[0.39px] pr-[0.05px] w-auto">
-                                    <Text
-                                      className="sm:text-[17px] md:text-[19px] text-[21px] text-center text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                      size="txtAsapMedium21PurpleA100"
-                                    >
-                                      Services
-                                    </Text>
+                                   <h1>
+                                    Services
+                                   </h1>
                                   </div>
                                 </div>
                                 <div className="flex flex-row h-12 md:h-auto items-center justify-center md:px-10 px-12 sm:px-5 py-2.5 w-auto">
@@ -521,12 +515,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                     alt="favorite"
                                   />
                                   <div className="flex flex-col items-center justify-start w-auto">
-                                    <Text
-                                      className="sm:text-[17px] md:text-[19px] text-[21px] text-center text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                      size="txtAsapMedium21PurpleA100"
-                                    >
-                                      Reviews
-                                    </Text>
+                               <h1>
+                                 Reviews
+                               </h1>
                                   </div>
                                 </div>
                               </div>
@@ -543,12 +534,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       alt="imgsvg"
                                     />
                                     <div className="flex flex-col h-7 md:h-auto items-start justify-start">
-                                      <Text
-                                        className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[0.50px] uppercase w-auto"
-                                        size="txtAsapBold24"
-                                      >
-                                        About me
-                                      </Text>
+                                     <h1>
+                                      About me
+                                     </h1>
                                     </div>
                                   </div>
                                   <div className="flex flex-col items-start justify-start pr-[4.63px] w-auto md:w-full">
@@ -583,17 +571,14 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       src="images/img_imgsvg_black_900.svg"
                                       alt="imgsvg_One"
                                     />
-                                    <Text
-                                      className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                      size="txtAsapBold24"
-                                    >
+                                     <h1>
                                       Personal Details
-                                    </Text>
+                                     </h1>
                                   </div>
                                   <div className="flex flex-col items-start justify-start w-[100%] md:w-full">
                                     <div className="flex md:flex-col flex-row md:gap-5 items-end w-[100%] justify-start w-auto">
                                       <List
-                                        className="sm:flex-col flex-row gap-px grid gap-[100px] sm:grid-cols-1 justify-center md:grid-cols-2 grid-cols-3 w-[100%] md:w-full"
+                                        className="sm:flex-col flex-row gap-px grid gap-[50px] sm:grid-cols-1 justify-center md:grid-cols-2 grid-cols-3 w-[100%] md:w-full"
                                         orientation="horizontal"
                                       >
                                         <div className="flex flex-col items-start justify-start pb-[25px] w-auto">
@@ -607,12 +592,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                               </Text>
                                             </div>
                                             <div className="flex flex-col items-center justify-start pt-1">
-                                              <Text
-                                                className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                size="txtAsapSemiBold14"
-                                              >
-                                                Gender
-                                              </Text>
+                                             <h2>
+                                              Gender
+                                             </h2>
                                             </div>
                                           </div>
                                         </div>
@@ -627,18 +609,15 @@ const DesktopTwentyNinePage: React.FC = () => {
                                               </Text>
                                             </div>
                                             <div className="flex flex-col items-center justify-start pt-1">
-                                              <Text
-                                                className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                size="txtAsapSemiBold14"
-                                              >
-                                                Sexuality
-                                              </Text>
+                                             <h2>
+                                              Sexuality
+                                             </h2>
                                             </div>
                                           </div>
                                         </div>
-                                        <div className="flex flex-col items-start justify-start pb-[25px] w-auto">
+                                        <div className="flex flex-col items-start justify-start pb-[25px] w-fit">
                                           <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
-                                            <div className="flex flex-col items-center justify-start pt-[23px]">
+                                            <div className=" mt-[4px] flex flex-col items-center justify-start pt-[23px]">
                                               <Text
                                                 className="h-[18px] text-base text-black-900 tracking-[0.50px]"
                                                 size="txtAsapRegular16"
@@ -646,13 +625,10 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                 26
                                               </Text>
                                             </div>
-                                            <div className="flex flex-col items-center justify-start pt-1">
-                                              <Text
-                                                className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                size="txtAsapSemiBold14"
-                                              >
-                                                Age
-                                              </Text>
+                                            <div className="mt-[2px] flex flex-col items-center justify-start pt-1">
+                                          <h2>
+                                            Age
+                                          </h2>
                                             </div>
                                           </div>
                                         </div>
@@ -668,12 +644,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             </Text>
                                           </div>
                                           <div className="flex flex-col items-center justify-start pt-1">
-                                            <Text
-                                              className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                              size="txtAsapSemiBold14"
-                                            >
-                                              Nationality
-                                            </Text>
+                                        <h2>
+                                          Nationality
+                                        </h2>
                                           </div>
                                         </div>
                                       </div>
@@ -689,25 +662,19 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       src="images/img_imgsvg_black_900_24x24.svg"
                                       alt="imgsvg_Two"
                                     />
-                                    <Text
-                                      className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                      size="txtAsapBold24"
-                                    >
-                                      Physical Details
-                                    </Text>
+                                  <h1>
+                                    Physical Details
+                                  </h1>
                                   </div>
                                   <div className="p-details flex flex-col items-start justify-start w-auto md:w-full">
                                     <div className="person flex flex-col items-center justify-start w-full">
                                       <div className="flex items-start flex-col items-center justify-start w-full">
                                         <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start w-full">
-                                          <div className="flex flex-col items-start justify-start pb-[25px] w-auto">
+                                          <div className="flex flex-col items-start justify-start pb-[25px] w-[11%]">
                                             <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
-                                              <div className="flex flex-row h-[42px] md:h-auto items-start justify-start w-auto">
-                                                <List
-                                                  className="sm:flex-col flex-row grid grid-cols-2 w-[43px]"
-                                                  orientation="horizontal"
-                                                >
-                                                  <div className="flex flex-col items-start justify-end pr-1 pt-1 w-full">
+                                              <div className="flex flex-row h-[42px] md:h-auto items-end justify-start w-auto">
+                            
+                                                  {/* <div className="flex flex-col items-start justify-end pr-1 pt-1 w-full">
                                                     <Text
                                                       className="mt-[19px] text-base text-black-900 tracking-[0.50px]"
                                                       size="txtAsapRegular16"
@@ -731,20 +698,21 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   >
                                                     -
                                                   </Text>
-                                                </div>
+                                                </div> */}
+                                                <p>
+                                                  null
+                                                </p>
                                               </div>
-                                              <div className="flex flex-col items-center justify-end pt-[5px]">
-                                                <Text
-                                                  className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                  size="txtAsapSemiBold14"
-                                                >
-                                                  CHEST / WAIST / HIPS
-                                                </Text>
+                                              <div className="flex flex-col items-start justify-end pt-[5px]">
+                                                <h2 className="w-[62%]">
+                                                  Chest/
+                                                  Waist/Hips
+                                                </h2>
                                               </div>
                                             </div>
                                           </div>
                                           <List
-                                            className="types md:flex-1 sm:flex-col flex-row md:gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 w-[76%] md:w-full"
+                                            className=" md:flex-1 sm:flex-col flex-row md:gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 w-[50%] md:w-full"
                                             orientation="horizontal"
                                           >
                                             <div className="flex flex-col items-center justify-start sm:ml-[0] pb-[25px] w-auto">
@@ -758,12 +726,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Ethnicity
-                                                  </Text>
+                                             <h2>
+                                              Ethniticy
+                                             </h2>
                                                 </div>
                                               </div>
                                             </div>
@@ -778,12 +743,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Hair colour
-                                                  </Text>
+                                                  <h2>
+                                                    Hair-color
+                                                  </h2>
                                                 </div>
                                               </div>
                                             </div>
@@ -798,18 +760,15 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Height
-                                                  </Text>
+                                              <h2>
+                                                Height
+                                              </h2>
                                                 </div>
                                               </div>
                                             </div>
                                           </List>
                                         </div>
-                                        <div className="flex md:flex-col flex-row gap-[7%] items-start justify-start w-full">
+                                        <div className="flex md:flex-col flex-row gap-[4%] items-start justify-start w-full">
                                           <div className="w-[10%] h-44 md:h-[89px] relative w-1/4 md:w-full">
                                             <div className="absolute flex flex-col items-start justify-start mx-auto pb-[25px] top-[0] w-auto">
                                               <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
@@ -822,12 +781,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Weight
-                                                  </Text>
+                                              <h2>
+                                                Weight
+                                              </h2>
                                                 </div>
                                               </div>
                                             </div>
@@ -842,17 +798,14 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Breast implant
-                                                  </Text>
+                                              <h2>
+                                                Breast Implant
+                                              </h2>
                                                 </div>
                                               </div>
                                             </div>
                                           </div>
-                                          <div className="flex md:flex-1 flex-col gap-[42px] items-center justify-start w-1/4 md:w-full">
+                                          <div className="flex md:flex-1 flex-col gap-[42px] items-center justify-start w-[10%] md:w-full">
                                             <div className="flex flex-col items-start justify-start pb-[25px] w-auto">
                                               <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
                                                 <div className="flex flex-col items-center justify-start pt-[23px]">
@@ -864,25 +817,19 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Eye colour
-                                                  </Text>
+                                              <h2>
+                                                Eye Color
+                                              </h2>
                                                 </div>
                                               </div>
                                             </div>
                                             <div className="flex flex-col items-start justify-start pb-[24.09px] md:pr-10 sm:pr-5 pt-[5px] w-auto">
-                                              <Text
-                                                className="text-purple-A100 text-sm tracking-[0.50px] uppercase w-auto"
-                                                size="txtAsapSemiBold14"
-                                              >
+                                              <h2>
                                                 Body Type
-                                              </Text>
+                                              </h2>
                                             </div>
                                           </div>
-                                          <div className="h-44 md:h-[89px] relative w-1/4 md:w-full">
+                                          <div className="h-44 md:h-[89px] relative w-[15%] md:w-full">
                                             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto pb-[25px] top-[0] w-auto">
                                               <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
                                                 <div className="flex flex-col items-center justify-end pt-6">
@@ -894,12 +841,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Genetalia
-                                                  </Text>
+                                                <h2>
+                                                  Genetalia
+                                                </h2>
                                                 </div>
                                               </div>
                                             </div>
@@ -914,12 +858,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                   </Text>
                                                 </div>
                                                 <div className="flex flex-col items-center justify-end pt-1">
-                                                  <Text
-                                                    className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                    size="txtAsapSemiBold14"
-                                                  >
-                                                    Body Art
-                                                  </Text>
+                                                 <h2>
+                                                   Body Art
+                                                 </h2>
                                                 </div>
                                               </div>
                                             </div>
@@ -935,12 +876,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                                 </Text>
                                               </div>
                                               <div className="flex flex-col items-center justify-end pt-1">
-                                                <Text
-                                                  className="text-purple-A100 text-sm tracking-[0.50px] uppercase"
-                                                  size="txtAsapSemiBold14"
-                                                >
-                                                  Cup Size
-                                                </Text>
+                                             <h2>
+                                              Cup Size
+                                             </h2>
                                               </div>
                                             </div>
                                           </div>
@@ -958,17 +896,14 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       src="images/img_imgsvg_24x24.svg"
                                       alt="imgsvg_Three"
                                     />
-                                    <Text
-                                      className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                      size="txtAsapBold24"
-                                    >
-                                      Language
-                                    </Text>
+                                 <h1>
+                                  Language
+                                 </h1>
                                   </div>
                                   <div className="flex flex-col items-start justify-start w-[97%] md:w-full">
-                                    <div className="flex relative w-full">
-                                      <div className="flex flex-col items-start justify-start my-auto pb-8 md:pr-10 sm:pr-5 pr-[49.87px] w-auto">
-                                        <div className="flex flex-col items-start justify-between pr-[0.01px] w-[484px] sm:w-full">
+                                    <div className="flex relative gap-[163px] w-full">
+                                      <div className="flex flex-col items-start w-[85%] justify-start my-auto pb-8 md:pr-10 sm:pr-5 pr-[49.87px] w-auto">
+                                        <div className="flex flex-col items-start justify-between pr-[0.01px] w-fit sm:w-full">
                                           <div className="flex flex-col items-start justify-start pr-4 w-auto">
                                             <div className="flex flex-row items-center justify-start w-auto">
                                               <Img
@@ -1042,17 +977,14 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       src="images/img_imgsvg_1.svg"
                                       alt="imgsvg_Four"
                                     />
-                                    <Text
-                                      className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                      size="txtAsapBold24"
-                                    >
-                                      Booking Notes
-                                    </Text>
+                                <h1>
+                                  Booking Notes
+                                </h1>
                                   </div>
                                   <div className="flex flex-col items-start justify-start w-auto md:w-full">
-                                    <div className="flex flex-col items-center justify-start w-full">
+                                    <div className="flex flex-col items-center justify-start w-[25%]">
                                       <div className="flex flex-col items-center justify-start w-full">
-                                        <div className="flex md:flex-col flex-row md:gap-5 items-center justify-between w-full">
+                                        <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start w-full">
                                           <div className="flex sm:flex-1 flex-col items-start justify-start pb-2 w-auto sm:w-full">
                                             <div className="flex flex-row items-center justify-start md:pr-10 sm:pr-5 pr-[369.7px] w-auto sm:w-full">
                                               <Img
@@ -1089,7 +1021,7 @@ const DesktopTwentyNinePage: React.FC = () => {
                                           </div>
                                         </div>
                                         <div className="flex flex-col items-start justify-start pb-2 w-auto md:w-full">
-                                          <div className="flex flex-row items-center justify-start md:pr-10 sm:pr-5 pr-[957.92px] w-auto md:w-full">
+                                          <div className="flex flex-row items-center justify-start md:pr-10 sm:pr-5 pr-[116px] w-auto md:w-full">
                                             <Img
                                               className="h-full w-9"
                                               src="images/img_close_purple_a100.svg"
@@ -1118,23 +1050,17 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       src="images/img_imgsvg_2.svg"
                                       alt="imgsvg_Five"
                                     />
-                                    <Text
-                                      className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                      size="txtAsapBold24"
-                                    >
-                                      Location
-                                    </Text>
+                                <h1>
+                                  Location
+                                </h1>
                                   </div>
                                   <div className="flex flex-col items-start justify-start w-auto md:w-full">
                                     <div className="md:h-[341px] h-[343px] relative w-[1021px] md:w-full">
-                                      <div className="absolute flex flex-col gap-[0.01px] md:h-auto h-full inset-y-[0] items-center justify-start left-[0] my-auto pb-[246.04px]">
+                                      <div className="absolute flex flex-col gap-[0.01px] md:h-auto h-full inset-y-[0] items-start justify-start left-[0] my-auto pb-[246.04px]">
                                         <div className="flex flex-col items-start justify-start pb-[31.59px] md:pr-10 sm:pr-5 pt-[19.92px] w-auto sm:w-full">
-                                          <Text
-                                            className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                            size="txtAsapBold24"
-                                          >
-                                            Incall
-                                          </Text>
+                                         <h1>
+                                          Incall
+                                         </h1>
                                         </div>
                                         <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 pr-[128.69px] w-full">
                                           <Text
@@ -1146,14 +1072,12 @@ const DesktopTwentyNinePage: React.FC = () => {
                                           </Text>
                                         </div>
                                       </div>
-                                      <div className="absolute flex flex-col h-full inset-y-[0] items-start justify-start my-auto right-[0] w-[48%]">
+                                      <div className="absolute flex flex-col h-full inset-y-[0] items-start justify-start my-auto right-[8%] w-[48%]">
                                         <div className="flex flex-col items-start justify-start pb-[31.59px] md:pr-10 sm:pr-5 pr-[427.7px] pt-[19.92px] w-auto sm:w-full">
-                                          <Text
-                                            className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                            size="txtAsapBold24"
-                                          >
-                                            Outcall
-                                          </Text>
+                                         <h1>
+                                          Outcall
+                                         </h1>
+                          
                                         </div>
                                         <div className="flex flex-col items-start justify-start pb-[15.16px] md:pr-10 sm:pr-5 pr-[471.7px] w-auto sm:w-full">
                                           <Text
@@ -1164,14 +1088,11 @@ const DesktopTwentyNinePage: React.FC = () => {
                                           </Text>
                                         </div>
                                         <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 pr-[405px] w-auto sm:w-full">
-                                          <Text
-                                            className="sm:text-[17px] md:text-[19px] text-[21px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                            size="txtAsapSemiBold21"
-                                          >
-                                            Location
-                                          </Text>
+                                       <h1>
+                                       Location 
+                                       </h1>
                                         </div>
-                                        <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 pr-[432.7px] w-auto sm:w-full">
+                                        <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto sm:w-full">
                                           <Text
                                             className="text-base text-black-900 tracking-[0.50px] w-auto"
                                             size="txtAsapRegular16"
@@ -1180,12 +1101,8 @@ const DesktopTwentyNinePage: React.FC = () => {
                                           </Text>
                                         </div>
                                         <div className="flex flex-col items-start justify-start mt-12 md:pr-10 sm:pr-5 w-auto sm:w-full">
-                                          <Text
-                                            className="sm:text-[17px] md:text-[19px] text-[21px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                            size="txtAsapSemiBold21"
-                                          >
-                                            I travel to
-                                          </Text>
+                                        <h1>
+                                        I Travel To</h1>
                                         </div>
                                         <div className="flex flex-col items-start justify-start w-auto sm:w-full">
                                           <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 pr-[505.7px] w-full">
@@ -1226,22 +1143,16 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       src="images/img_imgsvg_3.svg"
                                       alt="imgsvg_Six"
                                     />
-                                    <Text
-                                      className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                      size="txtAsapBold24"
-                                    >
+                                     <h1>
                                       Price
-                                    </Text>
+                                     </h1>
                                   </div>
                                   <div className="flex md:flex-col flex-row gap-[-0.02px] items-start justify-start w-full">
                                     <div className="call-wrap lex flex-col h-[190px] md:h-auto items-start justify-start">
                                       <div className="flex flex-col items-start justify-start pb-[31.59px] md:pr-10 sm:pr-5 w-auto sm:w-full">
-                                        <Text
-                                          className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                          size="txtAsapBold24"
-                                        >
-                                          INCALL
-                                        </Text>
+                                    <h1>
+                                      INCALL
+                                    </h1>
                                       </div>
                                       <List
                                         className="flex flex-col items-start md:pr-10 sm:pr w-full"
@@ -1249,12 +1160,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                       >
                                         <div className="flex flex-1 md:flex-1 md:flex-col flex-row md:gap-10 gap-[50px] items-start justify-start my-0 pb-[13.69px] pr-[0.01px] w-auto md:w-full">
                                           <div className="flex flex-col items-start justify-start w-auto">
-                                            <Text
-                                              className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                              size="txtAsapSemiBold19"
-                                            >
-                                              1 Hour
-                                            </Text>
+                                         <h3>
+                                          1 Hour
+                                         </h3>
                                           </div>
                                           <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
                                             <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1279,12 +1187,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                         </div>
                                         <div className="flex flex-1 md:flex-1 md:flex-col flex-row md:gap-10 w-[63%] gap1 gap-[50px] items-start justify-start my-0 pb-[13.69px] pr-[0.01px] w-auto md:w-full">
                                           <div className="flex flex-col items-start justify-start w-auto">
-                                            <Text
-                                              className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                              size="txtAsapSemiBold19"
-                                            >
-                                              2 Hour
-                                            </Text>
+                                     <h3>
+                                      2 Hour
+                                     </h3>
                                           </div>
                                           <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
                                             <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1309,12 +1214,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                         </div>
                                         <div className="flex flex-1 md:flex-1 md:flex-col flex-row md:gap-10 gap-[50px] items-start justify-start my-0  pb-[13.69px] pr-[0.01px] w-auto md:w-full">
                                           <div className="flex flex-col items-start justify-start w-auto">
-                                            <Text
-                                              className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                              size="txtAsapSemiBold19"
-                                            >
-                                              3 Hour
-                                            </Text>
+                                        <h3>
+                                          3 Hour
+                                        </h3>
                                           </div>
                                           <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-auto">
                                             <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1342,42 +1244,30 @@ const DesktopTwentyNinePage: React.FC = () => {
                                     <div className="w-[48%]">
                                       <div className="flex flex-col h-[190px] md:h-auto items-start justify-start">
                                         <div className="flex flex-col items-start justify-start pb-[31.59px] md:pr-10 sm:pr-5 w-auto sm:w-full">
-                                          <Text
-                                            className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                            size="txtAsapBold24"
-                                          >
-                                            OUTCALL
-                                          </Text>
+                                         <h1>
+                                          OUTCALL
+                                         </h1>
                                         </div>
                                         <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
                                           <div className="flex flex-col items-start justify-start pb-[13.69px] w-auto sm:w-full">
                                             <div className="flex flex-col items-start justify-start w-auto">
-                                              <Text
-                                                className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                size="txtAsapSemiBold19"
-                                              >
-                                                1 Hour
-                                              </Text>
+                                            <h3>
+                                              1 Hour
+                                            </h3>
                                             </div>
                                           </div>
                                           <div className="flex flex-col items-start justify-start pb-[13.69px] w-auto sm:w-full">
                                             <div className="flex flex-col items-start justify-start w-auto">
-                                              <Text
-                                                className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                size="txtAsapSemiBold19"
-                                              >
-                                                2 Hour
-                                              </Text>
+                                          <h3>
+                                            2 Hours
+                                          </h3>
                                             </div>
                                           </div>
                                           <div className="flex flex-col items-start justify-start pb-[13.69px] w-auto sm:w-full">
                                             <div className="flex flex-col items-start justify-start w-auto">
-                                              <Text
-                                                className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                size="txtAsapSemiBold19"
-                                              >
-                                                3 Hour
-                                              </Text>
+                                          <h3>
+                                            3 Hours
+                                          </h3>
                                             </div>
                                           </div>
                                         </div>
@@ -1395,16 +1285,13 @@ const DesktopTwentyNinePage: React.FC = () => {
                                         src="images/img_clock_black_900.svg"
                                         alt="clock"
                                       />
-                                      <Text
-                                        className="text-2xl md:text-[22px] text-amber-A200_01 sm:text-xl tracking-[1.10px] uppercase w-auto"
-                                        size="txtAsapBold24"
-                                      >
-                                        Availability
-                                      </Text>
+                                    <h1>
+                                      Availability
+                                    </h1>
                                     </div>
                                     <div className="flex flex-col items-start justify-start w-[100%] md:w-full">
                                       <div className="flex md:flex-col flex-row gap-[-0.01px] w-[100%] items-start justify-start">
-                                        <div className="flex flex-col items-start justify-start w-[40%] w-auto sm:w-full">
+                                        <div className="flex flex-col items-start justify-start w-[32%] sm:w-full">
                                           <List
                                             className="flex flex-col w-[60%] gap-px items-center w-full"
                                             orientation="vertical"
@@ -1412,12 +1299,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             <div className="flex flex-1 flex-col items-start justify-start pb-[7px] pr-[7px] w-full">
                                               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[50px] items-end justify-between pr-[0.01px] w-auto sm:w-full">
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px]">
-                                                  <Text
-                                                    className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                    size="txtAsapSemiBold19"
-                                                  >
-                                                    Monday
-                                                  </Text>
+                                              <h3>
+                                                Monday
+                                              </h3>
                                                 </div>
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start">
                                                   <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1434,12 +1318,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             <div className="flex flex-1 flex-col items-start justify-start pb-[7px] pr-[7px] w-full">
                                               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[50px] items-end justify-between pr-[0.01px] w-auto sm:w-full">
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px]">
-                                                  <Text
-                                                    className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                    size="txtAsapSemiBold19"
-                                                  >
-                                                    Tuesday
-                                                  </Text>
+                                              <h3>
+                                                Tuesday
+                                              </h3>
                                                 </div>
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start">
                                                   <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1458,12 +1339,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             <div className=" w-[53%]">
                                               <div className="flex md:flex-col flex-row md:gap-10 gap-[18px] items-end justify-between pr-[0.01px] w-auto">
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px] pr-[0.44px]">
-                                                  <Text
-                                                    className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                    size="txtAsapSemiBold19"
-                                                  >
-                                                    Wednesday
-                                                  </Text>
+                                              <h3>
+                                                Wednesday
+                                              </h3>
                                                 </div>
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start">
                                                   <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1491,12 +1369,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                           <div className="flex flex-col items-start justify-start pb-[7px] pr-[7px] w-full">
                                             <div className="flex sm:flex-col flex-row sm:gap-10 gap-[50px] items-end justify-between pr-[0.01px] w-auto sm:w-full">
                                               <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px]">
-                                                <Text
-                                                  className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                  size="txtAsapSemiBold19"
-                                                >
-                                                  Thursday
-                                                </Text>
+                                          <h3>
+                                            Thursday
+                                          </h3>
                                               </div>
                                               <div className="flex flex-col h-[41px] md:h-auto items-start justify-start">
                                                 <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1519,12 +1394,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             <div className="flex md:flex-1 flex-col items-start justify-start pb-[7px] pr-[7px] w-[92%] md:w-full">
                                               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[50px] items-end justify-between w-auto sm:w-full">
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px]">
-                                                  <Text
-                                                    className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                    size="txtAsapSemiBold19"
-                                                  >
-                                                    Friday
-                                                  </Text>
+                                              <h3>
+                                                Friday
+                                              </h3>
                                                 </div>
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start">
                                                   <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1541,12 +1413,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             <div className="flex md:flex-1 flex-col items-start justify-start pb-[7px] pr-[7px] w-[92%] md:w-full">
                                               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[25px] items-end justify-between w-auto sm:w-full">
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px]">
-                                                  <Text
-                                                    className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                    size="txtAsapSemiBold19"
-                                                  >
-                                                    Saturday
-                                                  </Text>
+                                              <h3>
+                                                Saturday
+                                              </h3>
                                                 </div>
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start">
                                                   <div className="flex flex-col items-start justify-start md:pr-10 sm:pr-5 w-full">
@@ -1563,12 +1432,9 @@ const DesktopTwentyNinePage: React.FC = () => {
                                             <div className="flex flex-1 flex-col items-start justify-start pb-[7px] w-full">
                                               <div className="flex flex-col items-end justify-start w-auto sm:w-full">
                                                 <div className="flex flex-col h-[41px] md:h-auto items-start justify-start pb-[19px]">
-                                                  <Text
-                                                    className="text-[19px] text-purple-A100 tracking-[0.50px] uppercase w-auto"
-                                                    size="txtAsapSemiBold19"
-                                                  >
-                                                    Sunday
-                                                  </Text>
+                                              <h3>
+                                                Sunday
+                                              </h3>
                                                 </div>
                                               </div>
                                             </div>
@@ -1907,7 +1773,7 @@ const DesktopTwentyNinePage: React.FC = () => {
                         src="images/img_divvlistitemiconmargin_gray_600_01.svg"
                         alt="divvlistitemico"
                       />
-                      <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                      <div onClick={member} className="flex flex-col items-center justify-start py-4 w-[79%]">
                         <div className="flex flex-col items-start justify-start w-full">
                           <div className="flex flex-col items-center justify-start">
                             <Text
@@ -1976,6 +1842,7 @@ const DesktopTwentyNinePage: React.FC = () => {
                   </List>
                 </div>
               </div>
+              
         </div>
         <div className="flex flex-col font-montserrat items-center justify-start max-w-[1349px] mt-[59px] mx-auto md:px-5 w-full">
           <div className="flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 w-full">

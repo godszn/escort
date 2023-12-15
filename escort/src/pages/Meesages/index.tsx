@@ -21,7 +21,7 @@ const MeesagesPage: React.FC = () => {
   }
 
   const member = () => {
-    account('/BecomeamemberOne')
+    account('/Becomeamember')
   }
 
   const [isVisible , setIsVisible] = useState(false);
@@ -221,7 +221,7 @@ const MeesagesPage: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
+                    <div onClick={member} className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
                       <Img
                         className="h-14 w-14"
                         src="images/img_divvlistitemiconmargin_gray_600_01.svg"

@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 
 import {
   Button,
@@ -10,7 +11,7 @@ import {
   SelectBox,
   Text,
 } from "components";
-import Header2 from "components/Header2";
+import Header1 from "components/Header1";
 
 const preferredLanguageOptionsList = [
   { label: "Option1", value: "option1" },
@@ -24,11 +25,38 @@ const educationLevelOptionsList = [
 ];
 
 const DesktopTwentySixPage: React.FC = () => {
+  const account = useNavigate();
+  
+  const AccountPage = () => {
+    account('/DesktopTwentyNine')
+  }
+
+  const Advert = () => {
+    account('/A')
+  }
+
+  const messages = () => {
+    account('/Meesages')
+  }
+
+
+  const [isVisible , setIsVisible] = useState(false);
+  const [isrotate , setRotate] = useState(false)
+
+  const toggle = () => {
+    setIsVisible(!isVisible)
+    setRotate(!isrotate)
+  }
+
+  const rotate = {
+    transform: isrotate ? 'rotate(180deg)' : 'rotate(0deg)',
+    transition: 'all .5s ease-in-out'
+  }
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-montserrat items-start justify-start mx-auto pb-[414px] w-full">
+      <div className="bg-white-A700 flex flex-col overflow-x-hidden font-montserrat items-start justify-start mx-auto pb-[414px] w-full">
         <div className="flex flex-col gap-[35px] items-center w-full">
-          <Header2 className="flex flex-col items-center justify-center md:px-5 w-full" />
+          <Header1 className="flex flex-col items-center justify-center md:px-5 w-full" />
           <div className="flex flex-col md:px-5 relative w-full">
             <div className="flex flex-col mx-auto w-full">
               <div
@@ -38,259 +66,262 @@ const DesktopTwentySixPage: React.FC = () => {
                     "url('images/img_loginbannermasksvg_black_900.png')",
                 }}
               >
-                <div className="flex m-auto w-[98%] md:w-full">
-                  <div className="md:h-[917px] h-[952px] ml-[undefinedpx] my-auto pb-1.5 px-1.5 w-[22%] z-[1]">
-                    <div className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
-                      <div className="flex flex-col items-start justify-start mb-[674px] w-full">
-                        <div className="flex flex-col items-start justify-start w-[34%] md:w-full">
-                          <div
-                            className="bg-cover bg-no-repeat flex flex-col h-[70px] items-start justify-start p-1 w-[84%] md:w-full"
-                            style={{
-                              backgroundImage:
-                                "url('images/img_divuserpopularityicn.svg')",
-                            }}
+                <div className="flex w-[98%] md:w-full">
+                <div className="md:h-[917px] h-[952px] relative w-[25%] md:w-full">
+                <div className="absolute bg-white-A700 flex flex-col h-max inset-[0] items-center justify-center m-auto p-[25px] sm:px-5 rounded-[15px] shadow-bs7 w-[93%]">
+                  <div className="flex flex-col items-start justify-start mb-[674px] w-full">
+                    <div className="flex flex-col items-start justify-start w-[34%] md:w-full">
+                      <div
+                        className="bg-cover bg-no-repeat flex flex-col h-[70px] items-start justify-start p-1 w-[84%] md:w-full"
+                        style={{
+                          backgroundImage:
+                            "url('images/img_divuserpopularityicn.svg')",
+                        }}
+                      >
+                        <Img
+                          className="h-[49px] md:h-auto my-1.5 rounded-[50%] w-[49px]"
+                          src="images/img_bv7mozwnhchqrqp_49x49.png"
+                          alt="bv7mozwnhchqrqp_One"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center justify-start py-3 w-full">
+                      <div className="flex flex-col items-start justify-start w-full">
+                        <Text
+                          className="text-base text-blue_gray-900_02"
+                          size="txtMontserratMedium16Bluegray90002"
+                        >
+                          Tekena west
+                        </Text>
+                      </div>
+                      <div className="flex flex-col items-start justify-start w-full">
+                        <div className="flex flex-col items-center justify-end py-[5px]">
+                          <Text
+                            className="text-[15px] text-gray-800"
+                            size="txtMontserratRegular15Gray800"
                           >
-                            <Img
-                              className="h-[49px] md:h-auto my-1.5 rounded-[50%] w-[49px]"
-                              src="images/img_bv7mozwnhchqrqp_49x49.png"
-                              alt="bv7mozwnhchqrqp_One"
-                            />
-                          </div>
+                            <span className="text-gray-800 font-montserrat text-left font-normal">
+                              Popularity:{" "}
+                            </span>
+                            <span className="text-purple-400 font-montserrat text-left font-normal">
+                              Very low
+                            </span>
+                          </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-3 w-full">
-                          <div className="flex flex-col items-start justify-start w-full">
-                            <Text
-                              className="text-base text-blue_gray-900_02"
-                              size="txtMontserratMedium16Bluegray90002"
-                            >
-                              Tekena west
-                            </Text>
-                          </div>
-                          <div className="flex flex-col items-start justify-start w-full">
-                            <div className="flex flex-col items-center justify-end py-[5px]">
-                              <Text
-                                className="text-[15px] text-gray-800"
-                                size="txtMontserratRegular15Gray800"
-                              >
-                                <span className="text-gray-800 font-montserrat text-left font-normal">
-                                  Popularity:{" "}
-                                </span>
-                                <span className="text-purple-400 font-montserrat text-left font-normal">
-                                  Very low
-                                </span>
-                              </Text>
-                            </div>
-                          </div>
-                          <Button
-                            className="cursor-pointer font-medium mb-[3px] min-w-[227px] mt-[15px] rounded-[17px] text-center text-sm"
-                            color="pink_50"
-                            size="md"
-                            variant="outline"
+                      </div>
+                      <Button
+                        className="cursor-pointer font-medium mb-[3rem] min-w-[227px] mt-[15px] rounded-[17px] text-center text-sm"
+                        color="pink_50"
+                        size="md"
+                        variant="outline"
+                      >
+                        Increase Popularity
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute top-[23%] flex flex-col font-roboto gap-4 inset-x-[0] items-center justify-start mx-auto py-2 w-[96%]">
+                  <div className="leftNav flex flex-row items-center justify-start px-4 w-full">
+                    <Img
+                      className="h-14 w-14"
+                      src="images/img_home.svg"
+                      alt="home"
+                    />
+                    <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                      <div className="flex flex-col items-start justify-start w-full">
+                        <div className="flex flex-col items-center justify-start">
+                          <Text
+                            className="text-base text-gray-600_01"
+                            size="txtRobotoRegular16"
                           >
-                            Increase Popularity
-                          </Button>
+                            Home page
+                          </Text>
                         </div>
                       </div>
                     </div>
-                    <div className="absolute bottom-[5%] flex flex-col font-roboto inset-x-[0] items-center justify-start mx-auto py-2 w-[96%]">
-                      <div className="flex flex-row items-center justify-start px-4 w-full">
-                        <Img
-                          className="h-14 w-14"
-                          src="images/img_home.svg"
-                          alt="home"
-                        />
-                        <div className="flex flex-col items-center justify-start py-4 w-[79%]">
-                          <div className="flex flex-col items-start justify-start w-full">
+                  </div>
+                  <div className="flex flex-col items-center justify-start w-full">
+                    <div className=" mt-2 h-14 relative w-full">
+                      <Img
+                        className="absolute h-14 inset-y-[0] left-[6%] my-auto w-14"
+                        src="images/img_divvlistitemiconmargin.svg"
+                        alt="divvlistitemico"
+                      />
+                      <div className="absolute flex flex-row h-max inset-y-[0] items-center justify-center my-auto right-[6%] w-[70%]">
+                        <div className="flex flex-col items-center justify-start py-4 w-[84%]">
+                          <div className=" flex flex-col items-start justify-start w-full">
                             <div className="flex flex-col items-center justify-start">
                               <Text
                                 className="text-base text-gray-600_01"
                                 size="txtRobotoRegular16"
                               >
-                                Home page
+                                Features
                               </Text>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="flex flex-col items-center justify-start mt-4 w-full">
-                        <div className="h-14 relative w-full">
-                          <Img
-                            className="absolute h-14 inset-y-[0] left-[6%] my-auto w-14"
-                            src="images/img_divvlistitemiconmargin.svg"
-                            alt="divvlistitemico"
-                          />
-                          <div className="absolute flex flex-row h-max inset-y-[0] items-center justify-center my-auto right-[6%] w-[70%]">
-                            <div className="flex flex-col items-center justify-start py-4 w-[84%]">
-                              <div className="flex flex-col items-start justify-start w-full">
-                                <div className="flex flex-col items-center justify-start">
-                                  <Text
-                                    className="text-base text-gray-600_01"
-                                    size="txtRobotoRegular16"
-                                  >
-                                    Features
-                                  </Text>
-                                </div>
-                              </div>
-                            </div>
+                        <section onClick={toggle} style={rotate}>
                             <Img
-                              className="h-4"
+                              className="h-4 cursor"
                               src="images/img_arrowdown_gray_600_01.svg"
                               alt="arrowdown_One"
                             />
-                          </div>
-                          <Line className="absolute bg-black-900_1e border-gray-800_03 border-solid border-t h-px inset-x-[0] mx-auto top-[0] w-full" />
-                        </div>
-                        <div className="flex flex-col items-center justify-start w-full">
-                          <List
-                            className="flex flex-col gap-px items-center w-full"
-                            orientation="vertical"
-                          >
-                            <div className="flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
-                              <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
-                                <div className="flex flex-col items-start justify-start w-full">
-                                  <div className="flex flex-col items-center justify-start">
-                                    <Text
-                                      className="text-base text-gray-600_01"
-                                      size="txtRobotoRegular16"
-                                    >
-                                      Overview
-                                    </Text>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
-                              <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
-                                <div className="flex flex-col items-start justify-start w-full">
-                                  <div className="flex flex-col items-center justify-start">
-                                    <Text
-                                      className="text-base text-gray-600_01"
-                                      size="txtRobotoRegular16"
-                                    >
-                                      Advert free
-                                    </Text>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </List>
-                          <div className="flex flex-col justify-start w-full">
-                            <div className="flex flex-col items-center justify-start md:ml-[0] ml-[72px] py-4 w-[70%] md:w-full">
-                              <div className="flex flex-col items-start justify-start w-full">
-                                <div className="flex flex-col items-center justify-start">
-                                  <Text
-                                    className="text-base text-gray-600_01"
-                                    size="txtRobotoRegular16"
-                                  >
-                                    18 + content
-                                  </Text>
-                                </div>
-                              </div>
-                            </div>
-                            <Line className="bg-black-900_1e border-b border-gray-800_03 border-solid h-px w-full" />
-                          </div>
-                        </div>
+                        </section>
                       </div>
+                      <Line className="absolute bg-black-900_1e border-gray-800_03 border-solid border-t h-px inset-x-[0] mx-auto top-[0] w-full" />
+                    </div>
+                    {isVisible && <div className="flex flex-col items-center justify-start w-full">
                       <List
-                        className="flex flex-col gap-4 items-center mt-4 w-full"
+                        className="flex flex-col gap-px items-center w-full"
                         orientation="vertical"
                       >
-                        <div className="bg-orange-600 flex flex-1 flex-row items-center justify-start px-4 w-full">
-                          <Img
-                            className="h-14 w-14"
-                            src="images/img_lock_white_a700.svg"
-                            alt="lock"
-                          />
-                          <div className="flex flex-col items-center justify-start py-4 w-[79%]">
-                            <div className="flex flex-col items-start justify-start w-full">
-                              <div className="flex flex-col items-center justify-start">
-                                <Text
-                                  className="text-base text-white-A700"
-                                  size="txtRobotoBold16"
-                                >
-                                  Account settings
-                                </Text>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="flex flex-1 flex-row items-center justify-start px-4 w-full">
-                          <Img
-                            className="h-14 w-14"
-                            src="images/img_divvlistitemiconmargin_gray_600_01.svg"
-                            alt="divvlistitemico"
-                          />
-                          <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                        <div onClick = {messages} className="leftNav flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
+                          <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
                             <div className="flex flex-col items-start justify-start w-full">
                               <div className="flex flex-col items-center justify-start">
                                 <Text
                                   className="text-base text-gray-600_01"
                                   size="txtRobotoRegular16"
                                 >
-                                  Become a customer
+                                  Messages
                                 </Text>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div className="flex flex-1 flex-row items-center justify-start px-4 w-full">
-                          <Img
-                            className="h-14 w-14"
-                            src="images/img_divvlistitemiconmargin_gray_600_01_56x56.svg"
-                            alt="divvlistitemico"
-                          />
-                          <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                        <div onClick={Advert} className="leftNav flex flex-1 flex-col items-end justify-start my-0 px-4 w-full">
+                          <div className="flex flex-col items-center justify-start py-4 w-[79%] md:w-full">
                             <div className="flex flex-col items-start justify-start w-full">
                               <div className="flex flex-col items-center justify-start">
                                 <Text
                                   className="text-base text-gray-600_01"
                                   size="txtRobotoRegular16"
+                                  
                                 >
-                                  LadiesSTARS
-                                </Text>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="flex flex-1 flex-row items-center justify-start px-4 w-full">
-                          <Img
-                            className="h-14 w-[55px]"
-                            src="images/img_divvlistitemiconmargin_gray_600_01_56x55.svg"
-                            alt="divvlistitemico"
-                          />
-                          <div className="flex flex-col items-center justify-start py-4 w-[79%]">
-                            <div className="flex flex-col items-start justify-start w-full">
-                              <div className="flex flex-col items-center justify-start">
-                                <Text
-                                  className="text-base text-gray-600_01"
-                                  size="txtRobotoRegular16"
-                                >
-                                  Coins
+                                  Advert free
                                 </Text>
                               </div>
                             </div>
                           </div>
                         </div>
                       </List>
-                      <div className="flex flex-col font-montserrat items-center justify-end mb-[34px] p-[5px] w-full">
-                        <div className="flex flex-row items-center justify-start pr-[11px] py-[11px] w-[82%] md:w-full">
-                          <Img
-                            className="h-5"
-                            src="images/img_user_gray_800.svg"
-                            alt="user_One"
-                          />
-                          <Text
-                            className="text-base text-gray-800"
-                            size="txtMontserratRegular16Gray800"
-                          >
-                            Live Videos
-                          </Text>
+                      <div className="rated mt-2 bg-orange-600 flex flex-col justify-start w-full">
+                        <div className="flex flex-col items-center justify-start md:ml-[0] py-4 w-[100%] md:w-full">
+                          <div className="flex flex-col items-center justify-start w-full">
+                            <div className="flex flex-col items-center justify-start">
+                              <Text
+                                className="text-base text-white-A700"
+                                size="txtRobotoBold16"
+                              >
+                                18 + content
+                              </Text>
+                            </div>
+                          </div>
+                        </div>
+                        <Line className="none bg-black-900_1e border-b border-gray-800_03 border-solid h-px w-full" />
+                      </div>
+                    </div> }
+                  </div>
+                  <List
+                    className="flex flex-col gap-4 items-center mb-4 w-full"
+                    orientation="vertical"
+                  >
+                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
+                      <Img
+                        className="h-14 w-14"
+                        src="images/img_lock_gray_600_01.svg"
+                        alt="lock"
+                      />
+                      <div onClick = {AccountPage} className=" cursor flex flex-col items-center justify-start py-4 w-[79%]">
+                        <div className="flex flex-col items-start justify-start w-full">
+                          <div className="flex flex-col items-center justify-start">
+                            <Text
+                              className="text-base text-gray-600_01"
+                              size="txtRobotoRegular16"
+                            >
+                              Account settings
+                            </Text>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <Img
-                    className="h-[358px] ml-[-11.48px] mr-5 mt-[39px] z-[1]"
+                    <div className="leftNav active flex flex-1 flex-row items-center justify-start px-4 w-full">
+                      <Img
+                        className="h-14 w-14"
+                        src="images/img_divvlistitemiconmargin_gray_600_01.svg"
+                        alt="divvlistitemico"
+                      />
+                      <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                        <div className="flex flex-col items-start justify-start w-full">
+                          <div className="flex flex-col items-center justify-start">
+                            <Text
+                              className="text-base text-gray-600_01"
+                              size="txtRobotoRegular16"
+                            >
+                              Become a customer
+                            </Text>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
+                      <Img
+                        className="h-14 w-14"
+                        src="images/img_divvlistitemiconmargin_gray_600_01_56x56.svg"
+                        alt="divvlistitemico"
+                      />
+                      <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                        <div className="flex flex-col items-start justify-start w-full">
+                          <div className="flex flex-col items-center justify-start">
+                            <Text
+                              className="text-base text-gray-600_01"
+                              size="txtRobotoRegular16"
+                            >
+                              LadiesSTARS
+                            </Text>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="leftNav flex flex-1 flex-row items-center justify-start px-4 w-full">
+                      <Img
+                        className="h-14 w-[55px]"
+                        src="images/img_divvlistitemiconmargin_gray_600_01_56x55.svg"
+                        alt="divvlistitemico"
+                      />
+                      <div className="flex flex-col items-center justify-start py-4 w-[79%]">
+                        <div className="flex flex-col items-start justify-start w-full">
+                          <div className="flex flex-col items-center justify-start">
+                            <Text
+                              className="text-base text-gray-600_01"
+                              size="txtRobotoRegular16"
+                            >
+                              Coins
+                            </Text>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="leftNav flex flex-1 flex-col font-montserrat items-center justify-end p-[5px] w-full">
+                      <div className="flex flex-row items-center justify-start pr-[11px] py-[11px] w-[82%] md:w-full">
+                        <Img
+                          className="h-5"
+                          src="images/img_user_gray_800.svg"
+                          alt="user"
+                        />
+                        <Text
+                          className="text-base text-gray-800"
+                          size="txtMontserratRegular16Gray800"
+                        >
+                          Live Videos
+                        </Text>
+                      </div>
+                    </div>
+                  </List>
+                </div>
+              </div>
+                  {/* <Img
+                    className="h-[358px] ml-[-11.48px] mr-5  z-[1]"
                     src="images/img_divlwadblockh90.svg"
                     alt="divlwpageconten"
                   />
@@ -298,9 +329,9 @@ const DesktopTwentySixPage: React.FC = () => {
                     className="h-[739px] ml-[undefinedpx] object-cover z-[1]"
                     src="images/img_divbecomecustomer.png"
                     alt="divbecomecustom"
-                  />
+                  /> */}
                 </div>
-                <div className="absolute flex flex-col gap-[43px] h-max inset-y-[0] items-center justify-start my-auto right-[1%] w-[73%]">
+                <div className="absolute flex flex-col gap-[43px] h-max inset-y-[0] items-center justify-start  right-[1%] w-[73%]">
                   <div className="flex flex-col gap-6 items-start justify-start w-[98%] md:w-full">
                     <div className="bg-white-A700 border border-black-900 border-solid flex flex-col items-center justify-start p-[27px] sm:px-5 rounded-[15px] shadow-bs7 w-full">
                       <div className="flex flex-col items-start justify-start mb-[37px] w-full">
@@ -310,8 +341,8 @@ const DesktopTwentySixPage: React.FC = () => {
                         >
                           Profile
                         </Text>
-                        <div className="bg-white-A700 border border-black-900 border-solid h-[120px] mt-11 rounded-lg shadow-bs1 w-full"></div>
-                        <div className="border border-black-900 border-solid h-[54px] mt-[41px] rounded-lg shadow-bs1 w-full"></div>
+                        <input className="bg-white-A700 border border-black-900 border-solid h-[120px] mt-11 rounded-lg shadow-bs1 w-full"></input>
+                        <input className="border border-black-900 border-solid h-[54px] mt-[41px] rounded-lg shadow-bs1 w-full"></input>
                         <div className="flex flex-col font-roboto gap-1.5 items-start justify-start ml-3 md:ml-[0] mt-[39px] w-[99%] md:w-full">
                           <div className="flex flex-col items-start justify-start w-full">
                             <Text
@@ -413,13 +444,14 @@ const DesktopTwentySixPage: React.FC = () => {
                       </div>
                     </div>
                     <div className="md:h-16 h-[70px] relative w-[13%]">
-                      <div className="absolute bg-purple-400 h-[45px] inset-x-[0] mx-auto rounded-[22px] top-[0] w-full"></div>
-                      <Text
-                        className="absolute bottom-[0] capitalize inset-x-[0] leading-[32.00px] mx-auto text-center text-white-A700 text-xl tracking-[0.50px] w-[37%] sm:w-full"
-                        size="txtMontserratRegular20"
-                      >
-                        Save
-                      </Text>
+                      <div className="bg-purple-400 py-3 inset-x-[0] rounded-[22px] top-[0] w-full">
+                        <Text
+                          className="capitalize inset-x-[0] leading-[32.00px] mx-auto text-center text-white-A700 text-xl tracking-[0.50px]  sm:w-full font-montserrat font-normal"
+                          size="txtMontserratRegular20"
+                        >
+                          Save
+                        </Text>
+                      </div>
                     </div>
                   </div>
                   <div className="flex flex-col font-fuzzybubbles items-start justify-start w-full">
@@ -434,6 +466,7 @@ const DesktopTwentySixPage: React.FC = () => {
                   </div>
                 </div>
               </div>
+
               <div className="flex flex-col font-fuzzybubbles items-center justify-start ml-auto mr-[18px] mt-[-52px] pb-3 px-3 w-3/4 z-[1]">
                 <div className="bg-white-A700 flex flex-col items-center justify-start mb-3 p-2 rounded-[5px] w-full">
                   <div className="flex flex-col gap-[15px] items-start justify-start my-[11px] w-full">
@@ -446,7 +479,8 @@ const DesktopTwentySixPage: React.FC = () => {
                           Current Password
                         </Text>
                       </div>
-                      <div className="bg-white-A700 flex flex-col items-end justify-end outline outline-gray-800_04 p-1.5 rounded-[5px] w-full">
+                      <div className="bg-white-A700 items-center justify-end outline outline-gray-800_04 p-1.5 rounded-[5px] flex w-full">
+                        <input type="text" className='w-full inputsix' />
                         <Img
                           className="h-[19px] mr-1.5 mt-[5px]"
                           src="images/img_eye_gray_700_05.svg"
@@ -467,7 +501,8 @@ const DesktopTwentySixPage: React.FC = () => {
                             New Password
                           </Text>
                         </div>
-                        <div className="bg-white-A700 flex flex-col items-end justify-start outline outline-gray-800_04 p-2 rounded-[5px] w-full">
+                        <div className="bg-white-A700 flex items-center justify-start outline outline-gray-800_04 p-2 rounded-[5px] w-full">
+                        <input type="text" className='w-full inputsix' />
                           <Img
                             className="h-[19px] mr-1"
                             src="images/img_eye_gray_700_05.svg"
@@ -484,7 +519,8 @@ const DesktopTwentySixPage: React.FC = () => {
                             New Password Confirmation
                           </Text>
                         </div>
-                        <div className="bg-white-A700 flex flex-col items-end justify-start outline outline-gray-800_04 p-2 rounded-[5px] w-[95%] md:w-full">
+                        <div className="bg-white-A700 flex items-center justify-start outline outline-gray-800_04 p-2 rounded-[5px] w-[95%] md:w-full">
+                        <input type="text" className='w-full inputsix' />
                           <Img
                             className="h-[19px] mr-[7px]"
                             src="images/img_eye_gray_700_05.svg"
@@ -531,7 +567,7 @@ const DesktopTwentySixPage: React.FC = () => {
                       />
                     </div>
                     <Text
-                      className="absolute left-[4%] text-[13px] text-gray-700_04 top-[0]"
+                      className="absolute left-[4%] text-[13px] text-gray-700_04 top-[40%]"
                       size="txtMontserratRegular13"
                     >
                       Ethnicity
@@ -546,7 +582,7 @@ const DesktopTwentySixPage: React.FC = () => {
                       />
                     </div>
                     <Text
-                      className="absolute left-[4%] text-[13px] text-gray-700_04 top-[0]"
+                      className="absolute left-[4%] text-[13px] text-gray-700_04 top-[40%]"
                       size="txtMontserratRegular13"
                     >
                       Body type
@@ -561,7 +597,7 @@ const DesktopTwentySixPage: React.FC = () => {
                       />
                     </div>
                     <Text
-                      className="absolute left-[4%] text-[13px] text-gray-700_04 top-[0]"
+                      className="absolute left-[4%] text-[13px] text-gray-700_04 top-[40%]"
                       size="txtMontserratRegular13"
                     >
                       Height
@@ -569,7 +605,7 @@ const DesktopTwentySixPage: React.FC = () => {
                   </div>
                   <div className="h-[60px] relative w-full">
                     <Text
-                      className="mb-[-7.21px] ml-5 text-[13px] text-gray-700_04 z-[1]"
+                      className="mb-[-7.21px] top-[30%] absolute ml-5 text-[13px] text-gray-700_04 z-[1]"
                       size="txtMontserratRegular13"
                     >
                       Hair color
@@ -606,7 +642,7 @@ const DesktopTwentySixPage: React.FC = () => {
               <div className="font-montserrat md:gap-5 gap-[22px] grid md:grid-cols-1 grid-cols-2 justify-center min-h-[auto] w-full">
                 <div className="h-[62px] relative w-full">
                   <Text
-                    className="bg-white-A700 h-[17px] justify-center mb-[-7px] ml-[11px] pl-[9px] pr-[13px] text-[13px] text-gray-700_04 w-[86px] z-[1]"
+                    className="bg-white-A700 h-[17px] absolute top-[30%] justify-center mb-[-7px] ml-[11px] pl-[9px] pr-[13px] text-[13px] text-gray-700_04 w-[86px] z-[1]"
                     size="txtMontserratRegular13"
                   >
                     Character
@@ -621,7 +657,7 @@ const DesktopTwentySixPage: React.FC = () => {
                 </div>
                 <div className="h-[62px] relative w-full">
                   <Text
-                    className="bg-white-A700 h-[17px] justify-center mb-[-7px] ml-[11px] pl-[9px] pr-[13px] text-[13px] text-gray-700_04 w-[78px] z-[1]"
+                    className="bg-white-A700 h-[17px] absolute top-[30%] justify-center mb-[-7px] ml-[11px] pl-[9px] pr-[13px] text-[13px] text-gray-700_04 w-[78px] z-[1]"
                     size="txtMontserratRegular13"
                   >
                     Children
@@ -636,7 +672,7 @@ const DesktopTwentySixPage: React.FC = () => {
                 </div>
                 <div className="h-[62px] relative w-full">
                   <Text
-                    className="bg-white-A700 h-[17px] justify-center mb-[-7px] ml-[11px] pl-[9px] pr-3 text-[13px] text-gray-700_04 w-[70px] z-[1]"
+                    className="bg-white-A700 top-[30%] absolute  h-[17px] justify-center mb-[-7px] ml-[11px] pl-[9px] pr-3 text-[13px] text-gray-700_04 w-[70px] z-[1]"
                     size="txtMontserratRegular13"
                   >
                     Friends
@@ -651,7 +687,7 @@ const DesktopTwentySixPage: React.FC = () => {
                 </div>
                 <div className="h-[62px] relative w-full">
                   <Text
-                    className="bg-white-A700 h-[17px] justify-center mb-[-7px] ml-[11px] px-2.5 text-[13px] text-gray-700_04 w-[50px] z-[1]"
+                    className="bg-white-A700 h-[17px] absolute top-[30%] justify-center mb-[-7px] ml-[11px] px-2.5 text-[13px] text-gray-700_04 w-[50px] z-[1]"
                     size="txtMontserratRegular13"
                   >
                     Pets
@@ -811,13 +847,13 @@ const DesktopTwentySixPage: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-montserrat items-center justify-start mt-[652px] md:px-5 w-[93%] md:w-full">
+        <div className="flex flex-col font-montserrat items-center justify-start mt-[10px] md:px-5 w-[93%] md:w-full">
           <div className="flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 w-full">
             <div className="flex flex-col items-center justify-start mt-7 pb-[98px] w-[86%] md:w-full">
               <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
                 <div className="flex md:flex-1 flex-col items-center justify-end pt-9 w-[34%] md:w-full">
                   <div className="flex flex-row items-center justify-start w-full">
-                    <div className="flex flex-col items-center justify-start px-[11px] w-1/2">
+                    <div className="flex flex-col items-start justify-start px-[11px] w-1/2">
                       <div className="flex flex-col items-start justify-start pr-1.5 py-1.5">
                         <Text
                           className="text-gray-800 text-sm"
@@ -859,7 +895,7 @@ const DesktopTwentySixPage: React.FC = () => {
                         </Text>
                       </div>
                     </div>
-                    <div className="flex flex-col items-center justify-start pb-[11px] px-[11px] w-1/2">
+                    <div className="flex flex-col items-start justify-start pb-[11px] px-[11px] w-1/2">
                       <div className="flex flex-col items-start justify-start pr-[7px] py-[7px] w-full">
                         <div className="flex flex-col items-center justify-start">
                           <Text

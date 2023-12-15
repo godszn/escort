@@ -110,19 +110,6 @@ console.log(formData);
     }
   }
 };
-
-  // async  function login() {
-  //   axios.post( 'https://escort-backend-ny3u.onrender.com/api/v1/auth/login', values)
-  //   .then(result => {
-  //     console.log(result.data);
-  //   })
-
-  //   .catch(error => {
-  //     console.log(error);
-      
-  //   })
-  // }
-
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-montserrat gap-[42px] items-center justify-end mx-auto w-full">

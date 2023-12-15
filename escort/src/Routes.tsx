@@ -28,12 +28,22 @@ import Signup from "pages/Signup";
 import Login from "pages/Login";
 import DesktopThirtyTwo from "pages/DesktopThirtyTwo";
 import  Service from 'pages/Services'
+import EscortProfile from "pages/EscortProfile";
+import ConfirmEmail from "pages/ConfirmEmail";
+import EscortDashboard from "pages/EscortDashboard";
+import Authenticate from "pages/Authenticate";
+import EscortMainProfile from "pages/EscortMainProfile";
+import AddImages from "pages/AddImages";
+import AddVideos from "pages/AddVideos";
+import DesktopFourtyEight from "pages/DesktopFourtyEight";
+import DesktopFourtyNine from "pages/DesktopFourtyNine";
+import Gallery from 'pages/Gallery'
 
 const ProjectRoutes = () => {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<DesktopThirtyTwo />} />
+          <Route path="/" element={<DesktopThirtyTwo/>} />
           {/* <Route path="/Home" element={<Home />} /> */}
           <Route path="*" element={<NotFound />} />
           <Route path="/login" element={<Login />} />
@@ -61,6 +71,16 @@ const ProjectRoutes = () => {
           <Route path="/desktopthirtyfour" element={<DesktopThirtyFour />} />
           <Route path="/desktopthirtyfive" element={<DesktopThirtyFive />} />
           <Route path="/service" element={<Service/>} />
+          <Route path="/EscortProfile" element={<EscortProfile/>} />
+          <Route path="/ConfirmEmail" element={<ConfirmEmail/>} />
+          <Route path="/EscortDashboard" element={<EscortDashboard/>} />
+          <Route path="/Authenticate" element={<Authenticate/>} />
+          <Route path="/EscortMainProfile" element={<EscortMainProfile/>}/>
+          <Route path="/AddImages" element={<AddImages/>} />
+          <Route path="/AddVideos" element={<AddVideos/>} />
+          <Route path="/DesktopFourtyEight" element={<DesktopFourtyEight/>}/>
+          <Route path="/DesktopFourtyNine" element={<DesktopFourtyNine/>}/>
+          <Route path="Gallery" element={<Gallery/>}/>
         </Routes>
       </Router>
   );

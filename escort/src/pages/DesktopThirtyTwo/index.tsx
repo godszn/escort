@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, List, Text } from "components";
+import EscortProfile from "pages/EscortProfile";
 
 const DesktopThirtyTwoPage: React.FC = () => {
 
@@ -10,6 +11,10 @@ const DesktopThirtyTwoPage: React.FC = () => {
 
  const switchPage = () => {
   history('/signup');  
+ }
+
+ const escortProfile = () => {
+  history('/EscortProfile')
  }
 
   return (
@@ -26,7 +31,7 @@ const DesktopThirtyTwoPage: React.FC = () => {
               <div className="md:h-[171px] h-[73px] m-0 sm:h-[85px] md:ml-[0] ml-[25px] mr-[57px] mt-4 relative w-[95%] md:w-full">
                 <div className="absolute bg-white-A700 border-b border-gray-200_03 border-solid bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[98%]">
                   <div className="nav-links flex md:flex-col flex-row md:gap-10 items-center justify-end px-[15px] w-full">
-                    <div className="flex md:flex-1 flex-row gap-3.5 items-center justify-center pr-[18px] w-[29%] md:w-full">
+                    <div className="flex md:flex-1 flex-row gap-3.5 items-center justify-center pr-[18px] w-[40%] md:w-full">
                       <div className="flex flex-row items-center justify-end w-[75%] md:w-full">
                       <div className="flex flex-col items-center justify-end p-[11px]">
                         <a
@@ -49,6 +54,9 @@ const DesktopThirtyTwoPage: React.FC = () => {
                           Register
                         </Button>
                       </div>
+                        <button className="becomeEscort" onClick={escortProfile}>
+                          Become an Escort
+                        </button>
                     </div>
                       </div>
                     </div>
